@@ -1,0 +1,53 @@
+<body>
+    <pre>
+<script>
+    let n = prompt("Enter no. ") * 1;
+
+    for (let i = 1; i <= n * 2; i++) {
+        for (let j = 1; j <= n * 2; j++) {
+            if (i <= n) {
+                if (j <= (n + 1 - i) || j >= (n + i)) {
+                    document.write("*");
+                }
+                else {
+                    document.write(" ");
+                }
+            }
+            else {
+                if (j <= (i - n) || j >= (n * 2 + 6) - i) {
+                    document.write("*");
+                }
+                else {
+                    document.write(" ");
+                }
+            }
+        }
+        document.write("<BR>");
+    }
+
+    // for (var i = n; i >= 1; i--) {
+    //     for (var j = 1; j <= i; j++) {
+    //         document.write("*");
+    //     } for (var sp = 1; sp <= 2 * (n - i); sp++) {
+    //         document.write(" ");
+    //     }
+    //     for (var j = 1; j <= i; j++) {
+    //         document.write("*");
+    //     } document.write("<br>")
+    // }
+    // for (var i = 1; i <= n; i++) {
+    //     for (var j = 1; j <= i; j++) {
+    //         document.write("*");
+    //     }
+    //     for (var sp = 1; sp <= 2 * (n - i); sp++) {
+    //         document.write(" ");
+    //     }
+    //     for (var j = 1; j <= i; j++) {
+    //         document.write("*");
+    //     }
+    //     document.write("<br>")
+    // }
+
+</script>
+    </pre>
+</body>

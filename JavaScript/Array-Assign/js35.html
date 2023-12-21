@@ -1,0 +1,29 @@
+<!-- 35. Write a java program to implement selection sort algoritm -->
+<script>
+    document.write("**selection sort algoritm**<br>");
+    var n = (prompt("Enter the size of array: ")) * 1;
+    var x = new Array(n);
+    var i, j;
+    for (i = 0; i < n; i++) {
+        x[i] = (prompt("Enter " + (i + 1) + " element of the array1: ")) * 1;
+    }
+    document.write("<br><br>***ARRAY***<br>")
+    for (i = 0; i < n; i++) {
+        document.write(x[i] + " ");
+    }
+    document.write("<br><br>***SELECTION SORTING***<br>");
+    for(i=0;i<n;i++){
+      var min=Number.MAX_VALUE;
+      var minIdx=-1;
+      for(j=i;j<n;j++){
+        if(min>x[j]){
+          min=x[j];
+          minIdx=j;
+        }
+      }
+      var temp=x[minIdx];
+      x[minIdx]=x[i];
+      x[i]=temp;
+      document.write(x[i]+" ");
+    }
+</script>

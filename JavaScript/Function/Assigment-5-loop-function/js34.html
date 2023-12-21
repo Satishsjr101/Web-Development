@@ -1,0 +1,18 @@
+<body>
+    <script>
+        function checkPerfectNo() {
+            let n = prompt("Enter a Nth term : ");
+            let sum = 0;
+            for (let i = 1; i < n; i++) {
+                if (n % i == 0)
+                    sum += i;
+            }
+            if (n == sum)
+                alert("Perfect number");
+            else
+                alert("No a perfect number");
+        }
+
+    </script>
+    <form><input type="button" value="checkPerfectNo" onclick="checkPerfectNo()"></form>
+</body>

@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.parent {
+    height: 350px;
+    width: 350px;
+    display: flex;
+}
+
+.parent div {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    /* flex-basis: 100px; */
+    /* display: inline-block; */
+}
+
+#one {
+    flex-shrink: 2;
+}
+
+#two {
+    flex-shrink: 1;
+}
+
+#three {
+    flex-shrink: 3;
+}

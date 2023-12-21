@@ -1,0 +1,17 @@
+<body>
+    <pre>
+
+<script>
+    var n = prompt("Enter Number: ") * 1;
+    for (var i = 1; i <= n; i++) {
+        for (var j = 1; j <= i; j++) {
+            if (j == 1 || i == n || i == j)
+                document.write("*");
+            else
+                document.write("@");
+        }
+        document.write("<br>")
+    }
+</script>
+    </pre>
+</body>

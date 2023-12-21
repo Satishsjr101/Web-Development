@@ -1,0 +1,23 @@
+<body>
+    <script>
+        function checkPerfectNo() {
+            let n1 = prompt("Enter a 1st Num : ") * 1;
+            let n2 = prompt("Enter a 2nd Num : ") * 1;
+
+            let sum = 0;
+            for (let i = n1; i <= n2; i++) {
+                let tempNum = i;
+                sum = 0;
+                for (let j = 1; j < tempNum; j++) {
+                    if (tempNum % j == 0)
+                        sum = sum + j;
+                }
+                if (tempNum == sum)
+                    document.write("<br>" + tempNum + " Perfect number.");
+                else
+                    document.write("<br>" + tempNum + " no a perfect number");
+            }
+        }
+    </script>
+    <form><input type="button" value="checkPerfectNo" onclick="checkPerfectNo()"></form>
+</body>

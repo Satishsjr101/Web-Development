@@ -1,0 +1,23 @@
+<body>
+    <script>
+        function patternPrint() {
+            var n = prompt("Enter Number");
+            var k = 1;
+            for (var i = 1; i <= n; i++) {
+                for (var j = 1; j <= n; j++) {
+                    if (j % 2 != 0) {
+                        if (j == 1)
+                            document.write(j + " ");
+                        else
+                            document.write(j - 1 + " ");
+                        k++;
+                    } else {
+                        document.write(i + " ");
+                    }
+                }
+                document.write("<br>")
+            }
+        }
+    </script>
+    <form><input type="button" value="patternPrint" onclick="patternPrint()"></form>
+</body>

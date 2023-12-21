@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live-meets-template</title>
+    <style>
+        .first-section {
+            height: 850px;
+        }
+
+        .first-section-header {
+            height: 15%;
+        }
+
+        .header-top {
+            height: 35%;
+            display: flex;
+            background-color: #1f272b;
+            color: white;
+            margin: auto;
+        }
+
+        .header-top div:nth-child(1) {
+            display: flex;
+            width: 65%;
+            margin: auto;
+            font-weight: lighter;
+            font-size: 24px;
+        }
+
+        .header-top div:nth-child(2) {
+            width: 15%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .header-top div:nth-child(2) img {
+            width: 40%;
+        }
+
+        .header-top div small span {
+            color: darkgoldenrod;
+        }
+
+        .header-bottom {
+            height: 120px;
+            background-color: lightgrey;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+        }
+
+        .header-bottom div:nth-child(1) {
+            width: 40%;
+            border: 2px solid red;
+        }
+
+        .header-bottom div:nth-child(2) {
+            width: 40%;
+            height: 60%;
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .header-bottom div:nth-child(2) button {
+            font-size: 20px;
+            border: none;
+            background-color: transparent;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first-section">
+
+        <div class="first-section-header">
+            <div class="header-top">
+                <div>
+                    <small>
+                        template Design-by Developer <span> Satish Vishwakarma </span>
+                    </small>
+                </div>
+                <div>
+
+                    <a href="https://www.facebook.com/login/"><img src="images/Social-media-logo/facebook.png"
+                            alt=""></a>
+                    <a href="https://twitter.com/"><img src="images/Social-media-logo/twitter.png" alt=""></a>
+                    <a href="https://www.youtube.com/"><img src="images/Social-media-logo/youtube.png" alt=""></a>
+                    <a href="https://www.linkedin.com/login/"><img src="images/Social-media-logo/linkedin.png"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div>
+                    <h1>INFO MEETING</h1>
+                </div>
+                <div>
+                    <button>HOME</button>
+                    <button>MEEITNGS</button>
+                    <button>APPLY NOW</button>
+                    <button class="pages">PAGES
+                        <select>
+                            <option value="">UPCOMMING MEETINGS</option>
+                            <option value="">MEETING DETAILS </option>
+                            </section>
+                    </button>
+                    <button>COURSES</button>
+                    <button>CONTACT US</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

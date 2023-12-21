@@ -1,0 +1,22 @@
+<body>
+    <script>
+        function checkIsEvenOrOddDgt() {
+            var n = prompt("Enter a Number : ") * 1;
+            var m = n;
+            var evencount = 0;
+            var oddcount = 0;
+            while (n != 0) {
+                rem = n % 10;
+                n = parseInt(n / 10);
+                if (rem % 2 == 0 && rem!=0)
+                    evencount++;
+                else
+                    oddcount++;
+            }
+            document.write("EvenCount: " + evencount);
+            document.write("<br>Odd Count: " + oddcount);
+
+        }
+    </script>
+    <form><input type="button" value="checkNumOfDgt" onclick="checkNumOfDgt()"></form>
+</body>

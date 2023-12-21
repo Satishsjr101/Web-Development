@@ -1,0 +1,1072 @@
+<!-- Coffee -->
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .first-section {
+            /* border: 2px solid black; */
+            background-image: url(images/banner-bg.png);
+            background-size: 100%;
+            height: 530px;
+            width: 100%;
+
+        }
+
+        .header {
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 70px;
+            display: flex;
+        }
+
+        .left {
+            /* border: 2px solid yellow; */
+            width: 50%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .center {
+            /* border: 2px solid green; */
+            width: 50%;
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .center span {
+            color: #a9a8a8;
+        }
+
+        .center span:hover {
+            color: #4a4949;
+        }
+
+        .right {
+            /* border: 2px solid red; */
+            width: 15%;
+            height: 70px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+        }
+
+        .main-div {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 454px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .img-div {
+            /* border: 2px solid yellow; */
+            width: 35%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .text-div {
+            /* border: 2px solid red; */
+            width: 38%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            float: left;
+        }
+
+        .button-div {
+            /* border: 2px solid blue; */
+            width: 70%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 15px;
+            margin-top: 10px;
+
+
+        }
+
+        .button-div button {
+            width: 40%;
+            height: 45px;
+            background-color: #d48272;
+            font-size: 17px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+
+        }
+
+        .text-div h1 {
+            width: 100%;
+            font-size: 80px;
+            font-weight: 800;
+            margin-top: -70px;
+        }
+
+        .text-div h3 {
+            color: #e38773;
+            font-size: 22px;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            margin-right: 255px;
+        }
+
+        .second-section {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 500px;
+        }
+
+        .header1 {
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-weight: bold;
+            color: #252525;
+        }
+
+        .second-div {
+            /* border: 2px solid green; */
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .first-img {
+            /* border: 2px solid blue; */
+            width: 20%;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .first-img h1 {
+            font-size: 17px;
+            font-weight: bold;
+            color: #3b3b3b;
+        }
+
+        .first-img h3 {
+            font-size: 16px;
+            font-weight: lighter;
+            color: #3b3b3b;
+        }
+
+        .readMoreButton {
+            width: 45%;
+            height: 40px;
+            font-size: 15px;
+            color: #d78373;
+            border: 1px solid #d78373;
+            background-color: white;
+            border-radius: 5px;
+
+        }
+
+        .first-img button:hover {
+            border-color: #3b3b3b;
+            color: #3b3b3b;
+        }
+
+        .third-section {
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 620px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+
+        }
+
+        .third-div {
+            /* border: 2px solid black; */
+            width: 62%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 300px;
+        }
+
+        .third-section .text {
+            /* border: 2px solid blue; */
+            height: 350px;
+            width: 35%;
+            margin-top: -405px;
+            margin-left: 100px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 30px 0px;
+
+        }
+
+        .text h1 {
+            font-size: 28px;
+            font-weight: lighter;
+            color: #3b3b3b;
+            margin-left: 15px;
+        }
+
+        .text p {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 24px;
+            margin-left: 15px;
+            margin-right: 7px;
+
+        }
+
+        .fourth-section {
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 600px;
+            background-image: url(images/client-bg.png);
+            background-size: 100%;
+
+        }
+
+        .fourth-div {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 495px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .fourth-main {
+            /* border: 2px solid red; */
+            width: 50%;
+            height: 450px;
+            margin-left: 190px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+
+
+        }
+
+        .f1-div {
+            /* border: 2px solid blueviolet; */
+            width: 100%;
+            height: 120px;
+            display: flex;
+            margin-top: 25px;
+
+        }
+
+        .f1-left {
+            /* border: 2px solid green; */
+            width: 20%;
+            height: 120px;
+        }
+
+        .f1-right {
+            /* border: 2px solid yellow; */
+            width: 80%;
+            height: 120px;
+
+            color: #3b3b3b;
+        }
+
+        .f1-right h1 {
+            align-items: start;
+            justify-content: start;
+            font-size: 20px;
+            font-weight: 500px;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        .fifth-section {
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 660px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .fifth-main {
+            /* border: 2px solid blue; */
+            width: 80%;
+            height: 520px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .fifth-one {
+            /* border: 2px solid yellow; */
+            width: 45%;
+            height: 450px;
+            box-shadow: 0px 0px 20px 0px;
+            margin-top: 10px;
+        }
+
+
+
+        .fifth-img {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 300px;
+        }
+
+        .fifth-text {
+            /* border: 2px solid brown; */
+            width: 100%;
+            height: 145px;
+        }
+
+        .button {
+            /* border: 2px solid green; */
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .sixth-section {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 550px;
+
+
+        }
+
+        .sixth-main {
+            /* border: 2px solid red; */
+            width: 70%;
+            height: 400px;
+            margin-left: 180px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .sixth-main input {
+            width: 80%;
+            height: 40px;
+            border-radius: 40px;
+            background-color: #efefef;
+            color: #e70000;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 200;
+            padding: 11px 20px;
+            border: none;
+            outline: none;
+        }
+
+        textarea {
+            width: 80%;
+            height: 100px;
+            border-radius: 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            background-color: #efefef;
+            padding: 11px 20px;
+            border: none;
+            outline: none;
+        }
+
+        .sixth-main button {
+            width: 17%;
+            height: 45px;
+            border-radius: 5px;
+            border: none;
+            background-color: #d07d6b;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .last-section {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 450px;
+        }
+         @media screen and (max-width:460px) {
+            * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .first-section {
+            /* border: 2px solid black; */
+            background-image: url(images/banner-bg.png);
+            background-size: 100%;
+            height: 530px;
+            width: 100%;
+
+        }
+
+        .header {
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 70px;
+            display: flex;
+        }
+
+        .left {
+            /* border: 2px solid yellow; */
+            width: 50%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .center {
+            /* border: 2px solid green; */
+            width: 50%;
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .center span {
+            color: #a9a8a8;
+        }
+
+        .center span:hover {
+            color: #4a4949;
+        }
+
+        .right {
+            /* border: 2px solid red; */
+            width: 15%;
+            height: 70px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+        }
+
+        .main-div {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 454px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .img-div {
+            /* border: 2px solid yellow; */
+            width: 35%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .text-div {
+            /* border: 2px solid red; */
+            width: 38%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            float: left;
+        }
+
+        .button-div {
+            /* border: 2px solid blue; */
+            width: 70%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 15px;
+            margin-top: 10px;
+
+
+        }
+
+        .button-div button {
+            width: 40%;
+            height: 45px;
+            background-color: #d48272;
+            font-size: 17px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+
+        }
+
+        .text-div h1 {
+            width: 100%;
+            font-size: 80px;
+            font-weight: 800;
+            margin-top: -70px;
+        }
+
+        .text-div h3 {
+            color: #e38773;
+            font-size: 22px;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            margin-right: 255px;
+        }
+
+        .second-section {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 500px;
+        }
+
+        .header1 {
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-weight: bold;
+            color: #252525;
+        }
+
+        .second-div {
+            /* border: 2px solid green; */
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .first-img {
+            /* border: 2px solid blue; */
+            width: 20%;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .first-img h1 {
+            font-size: 17px;
+            font-weight: bold;
+            color: #3b3b3b;
+        }
+
+        .first-img h3 {
+            font-size: 16px;
+            font-weight: lighter;
+            color: #3b3b3b;
+        }
+
+        .readMoreButton {
+            width: 45%;
+            height: 40px;
+            font-size: 15px;
+            color: #d78373;
+            border: 1px solid #d78373;
+            background-color: white;
+            border-radius: 5px;
+
+        }
+
+        .first-img button:hover {
+            border-color: #3b3b3b;
+            color: #3b3b3b;
+        }
+
+        .third-section {
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 620px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+
+        }
+
+        .third-div {
+            /* border: 2px solid black; */
+            width: 62%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 300px;
+        }
+
+        .third-section .text {
+            /* border: 2px solid blue; */
+            height: 350px;
+            width: 35%;
+            margin-top: -405px;
+            margin-left: 100px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 30px 0px;
+
+        }
+
+        .text h1 {
+            font-size: 28px;
+            font-weight: lighter;
+            color: #3b3b3b;
+            margin-left: 15px;
+        }
+
+        .text p {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 24px;
+            margin-left: 15px;
+            margin-right: 7px;
+
+        }
+
+        .fourth-section {
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 600px;
+            background-image: url(images/client-bg.png);
+            background-size: 100%;
+
+        }
+
+        .fourth-div {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 495px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .fourth-main {
+            /* border: 2px solid red; */
+            width: 50%;
+            height: 450px;
+            margin-left: 190px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+
+
+        }
+
+        .f1-div {
+            /* border: 2px solid blueviolet; */
+            width: 100%;
+            height: 120px;
+            display: flex;
+            margin-top: 25px;
+
+        }
+
+        .f1-left {
+            /* border: 2px solid green; */
+            width: 20%;
+            height: 120px;
+        }
+
+        .f1-right {
+            /* border: 2px solid yellow; */
+            width: 80%;
+            height: 120px;
+
+            color: #3b3b3b;
+        }
+
+        .f1-right h1 {
+            align-items: start;
+            justify-content: start;
+            font-size: 20px;
+            font-weight: 500px;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        .fifth-section {
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 660px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .fifth-main {
+            /* border: 2px solid blue; */
+            width: 80%;
+            height: 520px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .fifth-one {
+            /* border: 2px solid yellow; */
+            width: 45%;
+            height: 450px;
+            box-shadow: 0px 0px 20px 0px;
+            margin-top: 10px;
+        }
+
+
+
+        .fifth-img {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 300px;
+        }
+
+        .fifth-text {
+            /* border: 2px solid brown; */
+            width: 100%;
+            height: 145px;
+        }
+
+        .button {
+            /* border: 2px solid green; */
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .sixth-section {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 550px;
+
+
+        }
+
+        .sixth-main {
+            /* border: 2px solid red; */
+            width: 70%;
+            height: 400px;
+            margin-left: 180px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .sixth-main input {
+            width: 80%;
+            height: 40px;
+            border-radius: 40px;
+            background-color: #efefef;
+            color: #e70000;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 200;
+            padding: 11px 20px;
+            border: none;
+            outline: none;
+        }
+
+        textarea {
+            width: 80%;
+            height: 100px;
+            border-radius: 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            background-color: #efefef;
+            padding: 11px 20px;
+            border: none;
+            outline: none;
+        }
+
+        .sixth-main button {
+            width: 17%;
+            height: 45px;
+            border-radius: 5px;
+            border: none;
+            background-color: #d07d6b;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .last-section {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 450px;
+        }            
+        }
+    </style>
+    
+</head>
+
+<body>
+    <section class="first-section">
+        <div class="header">
+            <div class="left">
+                <img src="Coffee/logo.png" style="margin-left: 35px;">
+            </div>
+            <div class="center">
+                <span style="color: #4a4949;">HOME</span>
+                <span>ABOUT</span>
+                <span>SHOP</span>
+                <span>COFFEES</span>
+                <span>BLOG</span>
+                <span>CONTACT</span>
+            </div>
+            <div class="right">
+                <img src="images/icon-4.png">
+                &nbsp;
+                <span>LOGIN </span>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <img src="images/icon-5.png">
+            </div>
+        </div>
+        <div class="main-div">
+            <div class="img-div">
+                <img src="Coffee/banner-img.png" style="height: 100%; width: 80%;">
+            </div>
+            <div class="text-div">
+                <h1>coffee</h1>
+                <h3>Tasty Of DozeCafe</h3>
+                &nbsp;
+                <p style="color: #4a4949;">more-or-less normal distribution of letters, as opposed to using</p>
+
+                <div class="button-div">
+                    <button>About</button>
+                    <button style="background-color: #4a4949;">Call Now</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="second-section">
+        <div class="header1">
+            <h1 style="font-size: 30px; font-weight: bolder;color: #4a4949;">OUR COFFEE OFFER</h1>
+            <img src="Coffee/bulit-icon.png">
+        </div>
+        <div class="second-div">
+            <div class="first-img">
+                <img src="Coffee/img-1.png" width="100%">
+                <br>
+                <h1>TYPES OF COFFEE</h1>
+                <br>
+                <h3>looking at its layout. The point of</h3>
+                <br>
+                <button class="readMoreButton">Read More</button>
+            </div>
+            <div class="first-img">
+                <img src="Coffee/img-2.png" width="100%">
+                <br>
+                <h1>BEAN VARIETIES</h1>
+                <br>
+                <h3>looking at its layout. The point of</h3>
+                <br>
+                <button class="readMoreButton">Read More</button>
+            </div>
+            <div class="first-img">
+                <img src="Coffee/img-3.png" width="100%">
+                <br>
+                <h1>BEAN VARIETIES</h1>
+                <br>
+                <h3>looking at its layout. The point of</h3>
+                <br>
+                <button class="readMoreButton">Read More</button>
+            </div>
+            <div class="first-img">
+                <img src="Coffee/img-4.png" width="100%">
+                <br>
+                <h1>COFFEE TO GO</h1>
+                <br>
+                <h3>looking at its layout. The point of</h3>
+                <br>
+                <button class="readMoreButton">Read More</button>
+            </div>
+        </div>
+    </section>
+    <section class="third-section">
+        <div class="header1">
+            <h1 style="font-size: 30px; font-weight: bolder;color: #4a4949;">ABOUT OUR SHOP</h1>
+            <img src="Coffee/bulit-icon.png">
+        </div>
+        <div class="third-div">
+            <img src="Coffee/about-img.png" width="100%" height="100%">
+        </div>
+        <div class="text">
+            <br>
+            <h1>Coffee distribution '</h1>
+            <br>
+            <p>has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+                making it look like readable English. Many desktop publishing packages and web page editorhas a
+                more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it
+                look like readable English. Many desktop publishing packages and web page editor</p>
+            <br>
+
+            <button class="readMoreButton" style="width: 30%; margin-left: 15px; margin-top: 25px;">Read More</button>
+
+        </div>
+    </section>
+    <section class="fourth-section">
+        <div class="header1">
+            <h1 style="font-size: 30px; font-weight: bolder;color: #4a4949;">WHAT SYAS CUSTOMERS</h1>
+            <img src="Coffee/bulit-icon.png">
+        </div>
+        <div class="fourth-div">
+            <div class="fourth-main">
+                <div class="f1-div">
+                    <div class="f1-left">
+                        <img src="Coffee/client-img1.png" width="100%" height="100%">
+                    </div>
+                    <div class="f1-right">
+                        <h1>Joy Moark</h1>
+                        <br>
+                        <p style="margin-left: 10px; font-size: 14px;">now use Lorem Ipsum as their default model text,
+                            and a search for 'lorem ipsum' will uncover
+                            many web sites still in their infancynow use Lorem Ipsum as their default model text,</p>
+                    </div>
+                </div>
+                <div class="f1-div">
+                    <div class="f1-left">
+                        <img src="Coffee/client-img2.png" width="100%" height="100%">
+                    </div>
+                    <div class="f1-right">
+                        <h1>Joy Moark</h1>
+                        <br>
+                        <p style="margin-left: 10px; font-size: 14px;">now use Lorem Ipsum as their default model text,
+                            and a search for 'lorem ipsum' will uncover
+                            many web sites still in their infancynow use Lorem Ipsum as their default model text,</p>
+                    </div>
+                </div>
+                <div class="f1-div">
+                    <div class="f1-left">
+                        <img src="Coffee/client-img3.png" width="100%" height="100%">
+                    </div>
+                    <div class="f1-right">
+                        <h1>Joy Moark</h1>
+                        <br>
+                        <p style="margin-left: 10px; font-size: 14px;">now use Lorem Ipsum as their default model text,
+                            and a search for 'lorem ipsum' will uncover
+                            many web sites still in their infancynow use Lorem Ipsum as their default model text,</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fifth-section">
+        <div class="header1">
+            <h1 style="font-size: 30px; font-weight: bolder;color: #4a4949;">OUR BLOG</h1>
+            <img src="Coffee/bulit-icon.png">
+        </div>
+        <div class="fifth-main">
+            <div class="fifth-one">
+                <div class="fifth-img">
+                    <img src="Coffee/blog-img1.png" width="100%" height="100%">
+                </div>
+                <div class="fifth-text">
+                    <h4 style="margin-left: 16px; color: #3b3b3b; font-weight: 800;">PREP TECHNIQUES COFFEE</h4>
+                    <br>
+                    <p style="margin-left: 16px; font-size: 14px; color: #3b3b3b;">distracted by the readable content of
+                        a page when looking at its layout. The point of using Lorem
+                        Ipsum is that it has a moredistracted by the readable content of a page when looking at its
+                        layout. The point of using Lorem Ipsum is that it has a more</p>
+                </div>
+
+                <div class="button">
+                    <button class="readMoreButton" style="width: 30%;">Read More</button>
+
+                </div>
+            </div>
+
+            <div class="fifth-one">
+                <div class="fifth-img">
+                    <img src="Coffee/blog-img2.png" width="100%" height="100%">
+                </div>
+                <div class="fifth-text">
+                    <h4 style="margin-left: 16px; color: #3b3b3b; font-weight: 800;">PREP TECHNIQUES COFFEE</h4>
+                    <br>
+                    <p style="margin-left: 16px; font-size: 14px; color: #3b3b3b;">distracted by the readable content of
+                        a page when looking at its layout. The point of using Lorem
+                        Ipsum is that it has a moredistracted by the readable content of a page when looking at its
+                        layout. The point of using Lorem Ipsum is that it has a more</p>
+                </div>
+
+                <div class="button">
+                    <button class="readMoreButton" style="width: 30%;">Read More</button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="sixth-section">
+        <div class="header1">
+            <h1 style="font-size: 30px; font-weight: bolder;color: #4a4949;">GET IN TOUCH</h1>
+            <img src="Coffee/bulit-icon.png">
+        </div>
+        <div class="sixth-main">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Email">
+            <input type="text" placeholder="Your Phone">
+            <textarea placeholder="Message"></textarea>
+            <button>SEND</button>
+        </div>
+    </section>
+    <section class="last-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.36184837074!2d75.84207155!3d22.7147882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fda443151739%3A0x6ce417b05ec77e4!2sRaj%20Mohalla%2C%20Indore%2C%20Madhya%20Pradesh%20452002!5e0!3m2!1sen!2sin!4v1702634061768!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<body>
+    <pre>
+
+<script>
+    var n = prompt("Enter Number: ") * 1;
+    var k = 1, l = 1;
+
+    for (var i = 1; i < 2 * n; i++) {
+
+        for (var j = 1; j < 2 * n; j++) {
+            if (i == n && j <= n)
+                document.write(j);
+            else if (j == n && i <= n)
+                document.write(i);
+            else if (j == n && i > n) {
+                document.write(i - 2 * k);
+                k++;
+            }
+            else if (i == n && j > n) {
+                document.write(j - 2 * l);
+                l++;
+            }
+            else
+                document.write(" ");
+        }
+        document.write("<br>")
+    }
+</script>
+    </pre>
+</body>

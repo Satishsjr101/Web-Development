@@ -1,0 +1,19 @@
+*{
+    background-color: lightblue;
+}
+p{
+    color: darkgoldenrod;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+h1{
+    text-align: center;
+    font-weight: lighter
+
+}
+body{
+    text-decoration: overline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+

@@ -1,0 +1,27 @@
+<!-- 37. Write a java progrtam to implement insertion sort algorithm -->
+<script>
+    document.write("**insertion sort algorithm**<br>");
+    var n = (prompt("Enter the size of array: ")) * 1;
+    var x = new Array(n);
+    var i, j;
+    for (i = 0; i < n; i++) {
+        x[i] = (prompt("Enter " + (i + 1) + " element of the array1: ")) * 1;
+    }
+    document.write("<br><br>***ARRAY***<br>")
+    for (i = 0; i < n; i++) {
+        document.write(x[i] + " ");
+    }
+    document.write("<br><br>***INSERTION SORTING***<br>");
+    for(i=1;i<n;i++){
+      j=i;
+      while(j>=1&&x[j]<x[j-1]){
+        var temp=x[j];
+        x[j]=x[j-1];
+        x[j-1]=temp;
+        j--;
+      }
+    }
+    for(i=0;i<n;i++){
+        document.write(x[i]+" ");
+    }
+</script>

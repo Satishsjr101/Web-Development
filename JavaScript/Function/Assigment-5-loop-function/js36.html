@@ -1,0 +1,17 @@
+<body>
+    <script>
+        function toReverseNo() {
+            var n = prompt("Enter a Number: ");
+            var m = n;
+            var rem = 0, rev = 0;
+            while (n != 0) {
+                rem = n % 10;
+                rev = rev * 10 + rem;
+                n = parseInt(n / 10);
+            }
+            alert("Reverse of " + m + " :-  " + rev);
+        }
+    </script>
+    <form><input type="button" value="toReverseNo" onclick="toReverseNo()">
+    </form>
+</body>

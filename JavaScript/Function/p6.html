@@ -1,0 +1,20 @@
+<script>
+    function add(a, b, callback) {
+
+        if (typeof (a) != "number" || typeof (b) != "number") {
+            callback(new Error("Invailid"));
+        } else {
+            var result = a + b;
+            document.write("<br>result :" + result);
+            callback(null, result);
+        }
+
+    }
+    var r = add(10, 25, function (err, result) {
+        err ? document.write(err) : result % 2 ? document.write("<br>odd") : document.write("<br>even");
+
+    });
+    document.write(r);
+
+
+</script>

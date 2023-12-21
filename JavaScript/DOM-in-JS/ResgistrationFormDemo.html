@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="formCSS.css" rel="stylesheet">
+</head>
+
+<body>
+    <center>
+
+        <h1>Registration Form 2023-24</h1>
+        <form id="registrationForm" style="background-color: aqua;">
+            <table border="1" width="100%">
+                <tr>
+                    <td>Name :</td>
+                    <td><input id="name" type="text" placeholder="Enter user name"></td>
+                </tr>
+                <tr>
+                    <td>DOB :</td>
+                    <td><input id="dob" type="date"></td>
+                </tr>
+                <tr>
+                    <td>Gender :</td>
+                    <td>
+                        <label>Male<input id="genderMale" name="gender" type="radio"></label>
+                        <label>Female<input id="genderFemale" name="gender" type="radio"></label>
+                        <label>Other<input id="genderOther" name="gender" type="radio"> </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile No :</td>
+                    <td><input id="mobileno" type="text"></td>
+                </tr>
+                <tr>
+                    <td>E-mail :</td>
+                    <td><input id="email" name type="email"></td>
+                </tr>
+                <tr>
+                    <td>Address :</td>
+                    <td><input id="address" type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" onclick="submitForm()">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+
+    <script>
+        function submitForm() {
+            var name = document.getElementById("name").value;
+            var dob = document.getElementById("dob").value;
+            var gender = document.querySelector('input[name="gender"]:checked');
+            var mobileNo = document.getElementById("mobileno").value;
+            var email = document.getElementById("email").value;
+            var address = document.getElementById("address").value;
+
+            // if (!name || !dob || !gender || !mobileNo || !email || !address) {
+            //     alert("Please fill out all required fields");
+            // }
+
+            function isValidName() {
+                var name = document.getElementById("name").value.trim();
+
+                if (name === "") {
+                    alert("Please, enter your name");
+                } else if (name.length < 3) {
+                    alert("Name must be at least 3 characters");
+                } else {
+                    var flag = false;
+                    for (var i = 0; i < name.length; i++) {
+                        var ch = name.charCodeAt(i);
+                        if (!((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122) || ch === 32)) {
+                            flag = true;
+                            break;
+                        }
+                    }
+                    if (flag) {
+                        alert("Please, enter character values only");
+                    }
+                }
+            }
+            // isValidName();
+            
+            function isValidDOB(dob) {
+                var dobArr = dob.split("-");
+                var year = dobArr[0];
+                var date = dobArr[1];
+                var month = dobArr[2];
+
+                if (year <= 1923 || year >= 2023)
+                    alert("Please! enter valid dob YEAR")
+                else if (month > 12)
+                    alert("Please! enter valid dob MONTH")
+                else if (date > 31)
+                    alert("Please! enter valid DATE")
+            }
+            // isValidDOB();
+
+            function isValidMobileNo(){
+                if((mobileNo*"")!=10)
+                    alert("please, enter Number should be 10 digit number")
+                var flag=false;
+                while(mobileNo!=0){
+                    var rem=mobileNo%10;
+                    if(!(rem>=0 && rem<10)){
+                        flag=true;
+                        break;
+                    }
+                    mobileNo=parseInt(mobileNo/10);
+                }
+                if(flag)
+                    alert("Please, enter number only")
+               
+            }
+            isValidMobileNo();
+
+            alert("Name: " + name +
+
+                "\nDOB: " + dob +
+                "\nGender: " + gender.value +
+                "\nMobile No: " + mobileNo +
+                "\nEmail: " + email +
+                "\nAddress: " + address);
+        }
+    </script>
+</body>
+
+</html>

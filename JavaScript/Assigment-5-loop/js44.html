@@ -1,0 +1,38 @@
+<body>
+    <script>
+        function interchargeFirstAndLastDgt() {
+            var n = prompt("Enter a  Number : ") * 1;
+            var orignalNum = n;
+            var m = n;
+            var last = n % 10;
+            var count = -1, rem = 0, rev = 0;
+
+            while (n != 0) {
+                count++;
+                n = parseInt(n / 10);
+            }
+            var first = parseInt(m / (Math.pow(10, count)));
+            var interchNo = last;
+
+            m = parseInt(m / 10);
+            while (m != 0) {
+                rem = m % 10
+                rev = rev * 10 + rem;
+                m = parseInt(m / 10);
+            }
+
+            rem = 0;
+            rev = parseInt(rev / 10);
+            while (rev != 0) {
+                rem = rev % 10;
+                interchNo = interchNo * 10 + rem;
+                rev = parseInt(rev / 10);
+            }
+            interchNo = interchNo * 10 + first;
+
+            document.write("InterChange First & Last Digit of " + orignalNum + " -----> " + interchNo);
+        }
+    </script>
+    <form><input type="button" value="intercharge First and Last Dgt of number" onclick="interchargeFirstAndLastDgt()">
+    </form>
+</body>

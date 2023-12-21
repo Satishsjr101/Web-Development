@@ -1,0 +1,38 @@
+<!--Q.9
+Given an unsorted array arr[] of size N having both negative and positive integers. 
+The task is place all negative element at the end of array without changing the order 
+of positive element and negative element.
+ -->
+<script>
+    var n=(prompt("Enter size of array: "))*1;
+    var arr=new Array(n);
+    var i,j;
+    for(i=0;i<n;i++){
+      arr[i]=(prompt("Enter "+(i+1)+" element of the array: "))*1;
+    }
+    document.write("The original array is - <br>");
+    var pc=0,nc=0;
+    for(i=0;i<n;i++){
+      document.write(arr[i]+" ");
+      if(arr[i]>=0)
+        pc++;
+      else
+        nc++;
+    }
+    var arrP=new Array(pc);
+    var arrN=new Array(nc);
+    document.write("<br><br>****RESULT****<br>");
+    for(i=0,j=0,k=0;i<n;i++){
+      if(arr[i]>=0)
+        arrP[j++]=arr[i];
+      else
+        arrN[k++]=arr[i];
+    }
+    for(i=0,j=0;i<n;i++){
+      if(i<arrP.length)
+        arr[i]=arrP[i];
+      else
+        arr[i]=arrN[j++];
+      document.write(arr[i]+" ");
+    }
+</script>

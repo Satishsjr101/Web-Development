@@ -1,0 +1,45 @@
+<!-- 29. Suppose a one-dimensional array AR containing integers is arranged in ascending order. Write a java program to search for an integer from AR with the help of Binary search method-->
+<!-- binary search-ascending order.. -->
+<script>
+    document.write("**search- Binary search method**");
+    var n = (prompt("Enter size of array: ")) * 1;
+    var arr = new Array(n);
+    var i, j,c=-1;
+    for (i = 0; i < n; i++) {
+        arr[i] = (prompt("Enter " + (i + 1) + " element of the array: ")) * 1;
+    }
+    document.write("<br><br>***ARRAY***<br>")
+    for (i = 0; i < n; i++) {
+        document.write(arr[i] + " ");
+    }
+    for(i=0;i<arr.length;i++){
+      for(j=0;j<arr.length-i-1;j++){
+        if(arr[j]>arr[j+1]){
+          arr[j]=arr[j]+arr[j+1];
+          arr[j+1]=arr[j]-arr[j+1];
+          arr[j]=arr[j]-arr[j+1];
+        }
+      }
+    }
+    var ele = (prompt("enter element for search: ")) * 1;
+    document.write("<br><br>***Sorted array***<br>")
+    for(i=0;i<n;i++){
+        document.write(arr[i] + " ");
+    }
+    var flag=false;
+    for(var low=0,high=arr.length-1;low<=high;){
+      var mid=parseInt((low+high)/2);
+      if(ele==arr[mid]){
+        flag=true;
+        break;
+      }
+      else if(ele>arr[mid])
+        low =mid+1;
+      else
+        high=mid-1;
+    }
+    if(flag)
+      document.write("<br>FOUND<br>");
+    else
+    document.write("<br>NOT FOUND<br>");
+</script>

@@ -1,0 +1,12 @@
+<script>
+    var n = prompt("Enter a Nth term : ");
+    a = 1;
+    b = 2;
+    let c = 1;
+    for (let i = 1; i <= n; i++) {
+        document.write("  " + c);
+        a = b;
+        b = c;
+        c = a * b;
+    }
+</script>

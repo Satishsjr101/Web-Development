@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tiya-Golf</title>
+    <style>
+        .first-section{
+    margin-left: 0;
+    width: 100%;
+    height: 600px;
+    background-image: url(images/homepage.jpg);
+    background-size: 1350px;
+}
+.second-section{
+    width: 100%;
+    height: 450px;
+}
+.first-section div{
+    margin: 0;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: #3D405B;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.navbar div img{
+    width: 50px;
+    height: 50px;
+    margin-left: 80px;
+    margin-top: 20px;
+    filter:invert(10%) sepia(1%) saturate(100%) hue-rotate(1deg) brightness(1000%) contrast(800%);
+}
+.header-button{
+   display: flex;
+   margin-left: 200px !important;
+   margin-top: 20px !important;
+} 
+.navbar button{
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: #3D405B;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+} 
+.navbar button:nth-child(7){
+    border: 2px solid #F2CC8F;
+    color: #F2CC8F;
+    border-radius: 20px;
+    width:130px ;
+}
+.navbar button:nth-child(1){
+    color: #F2CC8F;
+    border: none;
+}
+.navbar button:nth-child(1):hover{
+    color: white;
+}
+.navbar button:nth-child(7):hover{
+    background-color: #F2CC8F;
+    color: white;
+}
+.navbar button:hover{
+    border: none;
+    color: #F2CC8F;
+}
+.content{
+    margin-top: 20px !important;
+    margin-left: 2px;
+}
+.content span{
+    display: flex;
+    color: white;
+}
+.content span:nth-child(1){
+    font-size: 25px;
+    font-weight: bolder;
+}
+.content span:nth-child(2){
+    font-size: 15px;
+    font-weight: bold;
+}
+.first-section p{
+   font-size: 40px;
+   font-weight: bold;
+   color: white;
+   margin-top: 130px;
+   margin-left: 100px;
+}
+.left-div div{
+    margin-left: 100px;
+}
+.left-div button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    width: 150px;
+}
+.left-div button:nth-child(1){
+    background-color: #F2CC8F;
+    width: 100px;
+    border-radius: 40%;
+}
+.left-div button:nth-child(1):hover{
+    background-color: #E07A5F;
+}
+.left-div button:nth-child(2):hover{
+    color: #F2CC8F;
+}
+.left-div{
+    position: absolute;
+    top: 80px;
+}
+.right-div div{
+   position: absolute;
+   top: 230px;
+   left: 670px;
+}
+.right-div div iframe{
+    border-radius: 20px;
+}
+.second-left-div{
+    width: 40%;
+    height: 400px;
+}
+.inner-div{
+    display: flex;
+}
+.second-right-div{
+    width: 60%;
+    height: 400px;
+  }
+  .second-left-div div{
+   margin-top: 50px;
+   margin-left: 50px;
+  }
+  .second-left-div div p{
+    font-size: 21px;
+    color: #797A7D;
+  }
+  .second-right-div img:nth-child(1),.second-right-div img:nth-child(2){
+    width: 270px;
+    height: 170px;
+    border-radius: 15px;
+}
+.second-right-div div{
+    margin-top: 50px;
+    margin-left: 60px;
+}
+.right-div-content span{
+    margin: 28px;
+    font-size: 20px;
+    color: #797A7D;
+}
+.third-section{
+    width: 100%;
+    height: 550px;
+    border: solid red;
+    /* / background-image: url("images/play-img-1.jpg"); /
+    / background-size: 1250px; / */
+}
+.third-section img{
+    width: 100%;
+    height: 550px;
+}
+    </style>
+    <!-- <link rel="stylesheet" href="css1.css"> -->
+</head>
+<body>
+    <section class="first-section">
+        <div>
+            <div class="navbar">
+                <div>
+                    <img src="images/logo.png" alt="no image found">
+                </div>
+                <div class="content">
+                <span>Tiya</span>
+                <span>Golf Club</span>
+                </div>
+                <div class="header-button">
+                    <button>Home</button>
+                    <button>About</button>
+                    <button>Membership</button>
+                    <button>Events</button>
+                    <button>Contact Us</button>
+                    <button>Pages</button>
+                    <button>Member login</button>
+                </div>
+            </div>
+            <div class="left-div">
+                <p>Welcome to the club<br>
+                Tiya is Lifestyle</p>
+                <div>
+                <button>Our Story</button>
+                <button>Become a member</button>
+                </div>
+            </div>
+            <div class="right-div">
+                <div>
+                    <iframe width="560" height="315" frameborderradius="20px" src="https://www.youtube.com/embed/MGNgbNGOzh8?si=LCvuOANJX8vgEO3I"
+                        title="YouTube video player" frameborder="0"  
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
+            </div>
+            </div>
+    </section>
+    <section class="second-section">
+        <div>
+            <h1 style="text-align: center;">About Tiya</h1>
+            <div class="inner-div">
+            <div class="second-left-div">
+                <div>
+                <h1>Tiya Club History</h1>
+                <p><b>Since 1984</b>, Tiya is ranked #8 in the top 10 golf courses in the world. Tiya is Bootstrap 5 HTML CSS template for golf
+                clubs. Anyone can modify and use this layout for commercial purposes.</p>
+                <p>Tiya Golf Club is 100% free CSS template provided by TemplateMo website. Please tell your friends about our website.
+                Thank you for visiting.</p>
+            </div>
+            </div>
+            <div class="second-right-div">
+                <div class="right-div-content">
+                    <div>
+                    <img src="images/members/young-handsome-businessman-wearing-suit-.jpg" alt="no image found">
+                    <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard.jpg" alt="no image found"><br>
+                    <span style="font-size: 25px; color: black;">Michael</span>
+                    <span>Founder</span>
+                    <span  style="font-size: 25px; color: black;">Sandy</span>
+                    <span>Co-Founder</span>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="third-section">
+        <div>
+            <!-- <img src="images/gulf_girl.jpg" alt="no image found" > -->
+            <div class="third-section-div">
+                <h1>Get our newsletter</h1>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- 33. Write a java program to impelment binary search algorithm -->
+<script>
+    var n = (prompt("Enter the size of array: ")) * 1;
+    var x = new Array(n);
+    var i, j,flag=false;
+    for (i = 0; i < n; i++) {
+        x[i] = (prompt("**binary search Algo-for sorted array(ascending: increasing order)**Enter " + (i + 1) + " element of the array1: ")) * 1;
+    }
+    document.write("<br><br>***ARRAY***<br>")
+    for (i = 0; i < n; i++) {
+        document.write(x[i] + " ");
+    }
+    var ele = (prompt("enter element for search: ")) * 1;
+    for (var low = 0, high = x.length - 1, mid = 0; low <= high;) {
+        mid = parseInt((low + high) / 2);
+        if (ele == x[mid]) {
+            flag = true;
+            break;
+        }
+        else if (ele > x[mid])
+            low = mid + 1;
+        else
+            high = mid - 1;
+    }
+    if (flag)
+        document.write("<br>FOUND");
+    else
+        document.write("<br>NOT FOUND");
+</script>

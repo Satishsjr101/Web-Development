@@ -1,0 +1,14 @@
+<script>
+    function longestWord(str){
+        var word = str.split(' ');
+        var longword = "";
+        for(var i = 0; i < word.length; i++){
+            if (word[i].length > longword.length ) {
+                longestWord = word[i];
+            }
+        }
+        document.write(longestWord);
+    }
+    var str = "java is simple";
+    longestWord(str);
+</script>

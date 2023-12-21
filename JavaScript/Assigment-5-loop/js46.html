@@ -1,0 +1,20 @@
+<body>
+    <script>
+        function sumOfFirstAndLastDgt() {
+            var n = prompt("Enter a  Number : ") * 1;
+            var orignalNum = n;
+            var last = n % 10;
+            var count = -1;
+
+            while (n != 0) {
+                count++;
+                n = parseInt(n / 10);
+            }
+            var first = parseInt(orignalNum / (Math.pow(10, count)));
+            var sum = first + last;
+            document.write("Sum of 1st & 2nd Digit of " + orignalNum + " -----> " + sum);
+        }
+    </script>
+    <form><input type="button" value="Sum of First and Last Dgt of number" onclick="sumOfFirstAndLastDgt()">
+    </form>
+</body>

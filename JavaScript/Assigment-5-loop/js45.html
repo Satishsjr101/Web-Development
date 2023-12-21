@@ -1,0 +1,18 @@
+<body>
+    <script>
+        function sumOfDgt() {
+            var n = prompt("Enter a  Number : ") * 1;
+            var sum = 0;
+            var rem = 0;
+
+            while (n != 0) {
+                rem = n % 10;
+                sum += rem;
+                n = parseInt(n / 10);
+            }
+            document.write("Sum : " + sum);
+
+        }
+    </script>
+    <form><input type="button" value="sumOfDgt" onclick="sumOfDgt()"></form>
+</body>

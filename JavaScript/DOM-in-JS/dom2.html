@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-1</title>
+</head>
+<body>
+    
+
+    <center>
+        <button onclick="ImageSizeInc()">+</button>
+        <button onclick="ImageSizeDesc()">-</button><br><br>
+        <img id="main" src="images/shoes4.jpeg">
+    </center>
+
+    <script>
+        var obj=document.getElementById("main");
+        function  ImageSizeInc(){
+            obj.width+=20;
+            obj.height+=20;
+        }
+        function ImageSizeDesc(){
+            obj.width-=20;
+            obj.height-=20;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+        }
+    </script>
+</body>
+</html>

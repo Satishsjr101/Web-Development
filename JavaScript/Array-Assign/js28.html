@@ -1,0 +1,22 @@
+<!--28. P is one-dimensional array of integers. Write a Java program search for a data VAL from P. If VAL is present in the array then “element found ” otherwise “element not found” should be displayed.  -->
+
+<script>
+    var n = (prompt("Enter size of array: ")) * 1;
+    var arr = new Array(n);
+    var i, j,c=-1;
+    for (i = 0; i < n; i++) {
+        arr[i] = (prompt("Enter " + (i + 1) + " element of the array: ")) * 1;
+    }
+    var val = (prompt("enter val for search: ")) * 1;
+    document.write("<br><br>***ARRAY***<br>")
+    for (i = 0; i < n; i++) {
+        document.write(arr[i] + " ");
+        if (arr[i] == val) {
+            c++;
+        }
+    }
+    if (c == -1)
+        document.write("<br>NOT FOUND");
+    else
+        document.write("<br>FOUND");
+</script>

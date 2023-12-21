@@ -1,0 +1,21 @@
+<body>
+    <script>
+        function checkArmstrongNo() {
+            let n = prompt("Enter a Number : ");
+            let m = n;
+            let checkArmSum = 0;
+            while (n != 0) {
+                rem = n % 10;
+                checkArmSum += rem * rem * rem;
+                n = parseInt(n / 10);
+            }
+            if (checkArmSum == m)
+                alert(m + " is ArmStrong Number")
+            else
+                alert(m + " is not a  armStrong number")
+        }
+    </script>
+    <form>
+        <button onclick="checkArmstrongNo()">check Armstrong No</button>
+    </form>
+</body>

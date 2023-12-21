@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+  .smiley-face {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  margin: 50px auto;
+}
+
+.eyes {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  width: 50%;
+  height: 20%;
+}
+
+.eye {
+  background-color: black;
+  width: 20%;
+  height: 100%;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5%;
+}
+
+.mouth {
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+  width: 80%;
+  height: 20%;
+  border-bottom: 4px solid black;
+  border-radius: 50% / 80% 80% 0 0;
+}
+
+</style>
+<body>
+  <div class="smiley-face">
+    <div class="eyes"></div>
+    <div class="mouth"></div>
+  </div>
+</body>
+</html>

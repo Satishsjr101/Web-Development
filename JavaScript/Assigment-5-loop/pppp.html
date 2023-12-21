@@ -1,0 +1,20 @@
+<body>
+    <pre>
+<script>
+    var n = prompt("Enter Number: ");
+    for (var i = 1; i <= n; i++) {
+        for (var j = 1; j <= i; j++) {
+            if (j == 1 || i == n || i == j) {
+                if (j % 2 != 0)
+                    document.write("1");
+                else
+                    document.write("0");
+
+            } else
+                document.write(" ");
+        }
+        document.write("<br>");
+    }
+</script>
+    </pre>
+</body>

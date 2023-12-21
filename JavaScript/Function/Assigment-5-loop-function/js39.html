@@ -1,0 +1,28 @@
+<body>
+    <script>
+        function isStrongNumber() {
+            var n = prompt("Enter a Number : ");
+            var m = n;
+            var fact = 1, sum = 0, rem = 0;
+
+            while (n != 0) {
+                rem = n % 10;
+                sum += calcFactorial(rem);
+                n = parseInt(n / 10);
+            }
+            if (sum == m)
+                alert(m + " is Strong number");
+            else
+                alert(m + " is not Strong number");
+
+            function calcFactorial(f) {
+                fact = 1;
+                for (var i = 1; i <= f; i++) {
+                    fact *= i;
+                }
+                return fact;
+            }
+        }
+    </script>
+    <form><input type="button" value="isStrongNumber" onclick="isStrongNumber()" /></form>
+</body>

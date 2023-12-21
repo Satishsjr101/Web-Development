@@ -1,0 +1,25 @@
+<!--34. Write a java program to implement linear search -->
+<script>
+    document.write("**Linear search Algo**<br>");
+    var n = (prompt("Enter the size of array: ")) * 1;
+    var x = new Array(n);
+    var i, j,flag=false;
+    for (i = 0; i < n; i++) {
+        x[i] = (prompt("Enter " + (i + 1) + " element of the array1: ")) * 1;
+    }
+    document.write("<br><br>***ARRAY***<br>")
+    for (i = 0; i < n; i++) {
+        document.write(x[i] + " ");
+    }
+    var ele = (prompt("enter element for search: ")) * 1;
+    for(i=0;i<n;i++){
+      if(x[i]==ele){
+        flag=true;
+        break;
+      }
+    }
+    if (flag)
+        document.write("<br>FOUND");
+    else
+        document.write("<br>NOT FOUND");
+</script>

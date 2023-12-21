@@ -1,0 +1,15 @@
+<body>
+    <script>
+        function checkNumOfDgt() {
+            var n = prompt("Enter a Number : ") * 1;
+            var m = n;
+            var count = 0;
+            while (n != 0) {
+                n = parseInt(n / 10);
+                count++;
+            }
+            alert("Total digit in " + m + " :- " + count);
+        }
+    </script>
+    <form><input type="button" value="checkNumOfDgt" onclick="checkNumOfDgt()"></form>
+</body>

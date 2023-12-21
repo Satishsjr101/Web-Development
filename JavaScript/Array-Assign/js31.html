@@ -1,0 +1,42 @@
+<!-- 31. Suppose X. Y, Z are arrays of integers of size M, N, and M + N respectively. The numbers in array X and Y appear in descending order. Write a java program to produce third array Z by merging arrays X and Y in descending order.  -->
+<script>
+    var n = (prompt("Enter the size of array1st: ")) * 1;
+    var m = (prompt("Enter the size of array2nd: ")) * 1;
+    var arr1 = new Array(n);
+    var arr2 = new Array(m);
+    var arrM = new Array(n+m);
+    var i, j;
+    for (i = 0; i < n; i++) {
+        arr1[i] = (prompt("**X appear in descending order(decreasing order)**Enter " + (i + 1) + " element of the array1: ")) * 1;
+    }
+    for (i = 0; i < m; i++) {
+        arr2[i] = (prompt("**Y appear in descending order(decreasing order)**Enter " + (i + 1) + " element of the array2: ")) * 1;
+    }
+    document.write("<br><br>***ARRAY1***<br>")
+    for (i = 0; i < n; i++) {
+        document.write(arr1[i] + " ");
+    }
+    document.write("<br><br>***ARRAY2***<br>")
+    for (i = 0; i < m; i++) {
+        document.write(arr2[i] + " ");
+    }
+    for(i=0,j=0;i<n+m;i++){
+      if(i<n)
+        arrM[i]=arr1[i]; 
+      else
+        arrM[i]=arr2[j++];
+    }
+    for( i=0;i<arrM.length;i++){
+      for(j=0;j<arrM.length-i-1;j++){
+        if(arrM[j]<arrM[j+1]){
+          arrM[j]=arrM[j]+arrM[j+1];
+          arrM[j+1]=arrM[j]-arrM[j+1];
+          arrM[j]=arrM[j]-arrM[j+1];
+        }
+      }
+    }
+    document.write("<br><br>**Z by merging arrays X and Y in descending order.**<br>");
+    for(i=0;i<n+m;i++){
+        document.write(arrM[i]+" ");
+    }
+</script>

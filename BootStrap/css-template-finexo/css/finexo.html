@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finox</title>
+    <link rel="stylesheet" href="../../bootstrap-3.3.7-dist/">
+    <style>
+ 
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .first-section {
+            height: 1182px;
+            background-image: url("images/hero-bg.png");
+            background-size: 1890px;
+        }
+
+        .header-left {
+            height: 80px;
+            width: 150px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: xx-large;
+            font-weight: bolder;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-right {
+            height: 80px;
+            width: 1000px;
+            right: 100px;
+            position: absolute;
+
+            top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .header-left button {
+            font-size: xx-large;
+            background-color: transparent;
+            border: 0;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .header-right button {
+            font-size: x-large;
+            background-color: transparent;
+            border: 0;
+            color: white;
+        }
+
+        .header-right button:hover {
+            background-color: white;
+            z-index: -1;
+            color: rgb(171, 255, 82);
+        }
+
+        .first-section-content {
+            height: 800px;
+            position: relative;
+            top: 200px;
+        }
+
+        .first-section-content-left {
+            height: 400px;
+            width: 40%;
+            position: absolute;
+            left: 150px;
+            bottom: 200px;
+            color: white;
+        }
+
+        .first-section-content-left span {
+            font-weight: bolder;
+            font-size: xxx-large;
+        }
+
+        .first-section-content-left div {
+            font-size: x-large;
+            font-weight: lighter;
+            line-height: 30px;
+        }
+
+        .first-section-content-right {
+            height: 600px;
+            width: 50%;
+            position: absolute;
+            right: 0;
+        }
+
+        .first-section-content-left button {
+            background-color: rgb(146, 240, 252);
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            position: relative;
+            top: 20px;
+            border-radius: 10px;
+        }
+
+        .second-section {
+            height: 800px;
+            position: relative;
+            top: 100px;
+        }
+
+        .second-section-header {
+            height: 200px;
+            font-size: xxx-large;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 120px;
+        }
+
+        .second-section-header-text {
+            font-size: x-large !important;
+            font-weight: lighter;
+            line-height: 20px;
+        }
+
+        .second-section-content {
+            position: relative;
+            top: 10%;
+            left: 5%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            line-height: 32px;
+            width: 90%;
+        }
+
+        .second-section-content-left,
+        .second-section-content-middle,
+        .second-section-content-right {
+            background-color: #f8f8f9;
+            width: 24%;
+            height: 400px;
+        }
+
+        .second-section-content-left1,
+        .second-section-content-middle1,
+        .second-section-content-right1 {
+            margin-bottom: 20px;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .second-section-content-left2 div,
+        .second-section-content-middle2,
+        .second-section-content-right2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+            font-weight: bolder;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .second-section-content-left p,
+        .second-section-content-middle p,
+        .second-section-content-right p {
+            font-size: 22px;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .buttom-read-more {
+            position: relative;
+            left: 38%;
+            top: 20px;
+            font-size: x-large;
+            font-weight: lighter;
+            border: 0;
+        }
+
+        .second-section-content-left1,
+        .second-section-content-left2 {
+            line-height: 86px;
+        }
+
+        .buttom-veiw-all {
+            border: none;
+            position: absolute;
+            bottom: -120px;
+            width: 200px;
+            height: 60px;
+            left: 46%;
+            font-size: xx-large;
+            background-color: #00bbf0;
+            color: white;
+        }
+
+        .third-section {
+            position: relative;
+            top: 200px;
+            height: 900px;
+            background-color: #00204a;
+            color: white;
+        }
+
+        .third-section-header {
+            height: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            line-height: 50px;
+            font-size: larger;
+        }
+
+        .third-section-header span {
+            color: #00bbf0;
+        }
+
+        .third-section-header p {
+            font-size: larger;
+        }
+
+        .third-section-content {
+            height: 75%;
+            display: flex;
+            align-items: center;
+        }
+
+        .third-section-content-left,
+        .third-section-content-right {
+            width: 50%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .third-section-content-right h1 {
+            line-height: 100px;
+        }
+
+        .third-section-content-right p {
+            line-height: 30px;
+            font-size: large;
+            font-weight: lighter;
+        }
+
+        .third-section-content-right button {
+            position: relative;
+            top: 25px;
+            font-size: large;
+            font-weight: lighter;
+            height: 60px;
+            width: 150px;
+            background-color: #00bbf0;
+            color: white;
+        }
+
+        .third-section-content-right button:hover {
+            background-color: #037ea0;
+        }
+
+        .fourth-section {
+            position: relative;
+            top: 200px;
+            height: 1900px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fourth-section-header {
+            height: 10%;
+            font-size: x-large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fourth-section-header span {
+            color: #00bbf0;
+        }
+
+        .fourth-section-content1,
+        .fourth-section-content2,
+        .fourth-section-content3,
+        .fourth-section-content4 {
+            height: 25%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fourth-section-content1-div1,
+        .fourth-section-content2-div1,
+        .fourth-section-content3-div1,
+        .fourth-section-content4-div1 {
+            border: 5px solid black;
+            padding: 25px;
+            width: 105px;
+            border-radius: 50%;
+        }
+
+        .fourth-section-content1-div2,
+        .fourth-section-content2-div2,
+        .fourth-section-content3-div2,
+        .fourth-section-content4-div2 {
+            margin-top: 20px;
+            padding: 25px;
+            width: 260px;
+            font-size: large;
+            font-weight: bolder;
+        }
+
+        .fourth-section-content1-div3,
+        .fourth-section-content2-div3,
+        .fourth-section-content3-div3,
+        .fourth-section-content4-div3 {
+            margin-top: 10px;
+            font-size: x-large;
+        }
+
+        .fourth-section-buttom button {
+            background-color: #00bbf0;
+            color: white;
+            font-size: x-large;
+            height: 60px;
+            width: 200px;
+            border: none;
+        }
+
+        /* Fifth-Section */
+
+        .fifth-section {
+            height: 850px;
+            background-color: #00204a;
+            margin-top: 350px;
+        }
+
+        .fifth-section-header {
+            height: 20%;
+            padding-bottom: 0;
+            color: white;
+            font-size: x-large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fifth-section-header span {
+            color: #00bbf0;
+        }
+
+        .fifth-section-content {
+            height: 55%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .fifth-section-content1,
+        .fifth-section-content2,
+        .fifth-section-content3,
+        .fifth-section-content4 {
+            width: 22%;
+            height: 110%;
+            background-color: #00285d;
+        }
+
+        .fifth-section-content1 div:nth-child(1),
+        .fifth-section-content2 div:nth-child(1),
+        .fifth-section-content3 div:nth-child(1),
+        .fifth-section-content4 div:nth-child(1) {
+            height: 55%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+        .fifth-section-content1 div:nth-child(2),
+        .fifth-section-content2 div:nth-child(2),
+        .fifth-section-content3 div:nth-child(2),
+        .fifth-section-content4 div:nth-child(2) {
+            height: 30%;
+            line-height: 45px;
+        }
+
+
+        .fifth-section-content1 div:nth-child(3),
+        .fifth-section-content2 div:nth-child(3),
+        .fifth-section-content3 div:nth-child(3),
+        .fifth-section-content4 div:nth-child(3) {
+            height: 25%;
+        }
+
+        .fifth-section-content1 img,
+        .fifth-section-content2 img,
+        .fifth-section-content3 img,
+        .fifth-section-content4 img {
+            border: 8px solid white;
+            border-radius: 50%;
+        }
+
+        .fifth-section-content1 div:nth-child(2) h2,
+        .fifth-section-content2 div:nth-child(2) h2,
+        .fifth-section-content3 div:nth-child(2) h2,
+        .fifth-section-content4 div:nth-child(2) h2 {
+            color: #00bbf0;
+            display: flex;
+            justify-content: center;
+            font-size: xx-large;
+            font-weight: lighter;
+        }
+
+
+        .fifth-section-content1 div:nth-child(2) h3,
+        .fifth-section-content2 div:nth-child(2) h3,
+        .fifth-section-content3 div:nth-child(2) h3,
+        .fifth-section-content4 div:nth-child(2) h3 {
+            color: white;
+            display: flex;
+            justify-content: center;
+            font-size: x-large;
+            font-weight: lighter;
+        }
+
+        .social_box img {
+            width: 45px;
+            border: none;
+        }
+
+        .sixth-section {
+            height: 870px;
+        }
+
+        .sixth-section-header {
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+        }
+
+        .sixth-section-content {
+            height: 70%;
+        }
+
+        .sixth-section-header span {
+            color: #00bbf0;
+        }
+
+        .comment-section {
+            height: 70%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .comment-section div:nth-child(1),
+        .comment-section div:nth-child(2) {
+            height: 85%;
+            width: 40%;
+            border: 2px solid none;
+            box-shadow: 0px 0px 20px #d6d4d4;
+            padding-left: 35px;
+        }
+
+        .comment-section img {
+            border-radius: 50%;
+            border: 4px;
+            position: relative;
+            bottom: 50px;
+        }
+
+        .comment-section h2 {
+            padding-bottom: 10px;
+            font-weight: lighter;
+        }
+
+        .comment-section h3 {
+            padding-bottom: 10px;
+            font-weight: lighter;
+        }
+
+        .comment-section p {
+            font-size: large;
+            line-height: 27px;
+        }
+
+        .prev-next-button {
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+
+        }
+
+        .prev-next-button button:nth-child(1),
+        .prev-next-button button:nth-child(2) {
+            border: 2px solid;
+            width: 70px;
+            height: 70px;
+            font-size: x-large;
+        }
+
+        .prev-next-button div button {
+            box-shadow: 0px 0px 2px;
+            background-color: #f8f8f9;
+            border: 2px solid none;
+        }
+
+        .footer-section {
+            height: 500px;
+        }
+
+        .footer-address {
+            height: 85%;
+            background-color: #00204a;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+            line-height: 40px;
+        }
+
+        .copy-right {
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: lighter !important;
+            font-size: x-large;
+        }
+
+        .footer-address div {
+            width: 15%;
+            height: 90%;
+        }
+
+        .footer-address div div {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 55%;
+            height: 20%;
+            position: relative;
+            bottom: 20px;
+        }
+
+        .footer-address h1 {
+            font-size: xx-large;
+            padding-bottom: 30px;
+        }
+
+        .footer-address h3 {
+            font-size: x-large;
+            font-weight: lighter;
+            padding-bottom: 30px;
+        }
+
+        .social_box-footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .social_box-footer img {
+            width: 30px;
+        }
+
+        .footer-address input {
+            background-color: #00204a;
+            color: white;
+            border: none;
+            border-bottom: 2px solid;
+            padding-bottom: 10px;
+            font-size: x-large;
+        }
+
+        .footer-address button {
+            background-color: #00bbf0;
+            color: white;
+            font-size: x-large;
+            height: 15%;
+            width: 294px;
+            position: relative;
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first-section">
+        <div class="first-section-header">
+            <div class="header-left">
+                <button type="button">Finexo</button>
+            </div>
+            <div class="header-right">
+                <button type="button">HOME</button>
+                <button type="button">ABOUT</button>
+                <button type="button">SERVICES</button>
+                <button type="button">WHY US</button>
+                <button type="button">TEAM</button>
+                <button type="button">LOGIN</button>
+                <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                        viewBox="0,0,256,256">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(5.12,5.12)">
+                                <path
+                                    d="M21.5,8c-7.443,0 -13.5,6.057 -13.5,13.5c0,7.443 6.057,13.5 13.5,13.5c3.28907,0 6.3057,-1.18398 8.65039,-3.14648c0.2849,0.2849 9.56152,9.56249 9.79297,9.79492c0.47,0.47 1.23313,0.47 1.70313,0c0.47,-0.47 0.47,-1.23313 0,-1.70313c-0.23145,-0.23243 -9.50807,-9.51002 -9.79297,-9.79492c1.9625,-2.34469 3.14648,-5.36133 3.14648,-8.65039c0,-7.443 -6.057,-13.5 -13.5,-13.5zM21.5,9c6.892,0 12.5,5.608 12.5,12.5c0,6.892 -5.608,12.5 -12.5,12.5c-6.892,0 -12.5,-5.608 -12.5,-12.5c0,-6.892 5.608,-12.5 12.5,-12.5z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg></span>
+            </div>
+        </div>
+        <div class="first-section-content">
+            <span class="first-section-content-left">
+                <span>
+                    CRYPTO <br> CURRENCY
+                </span>
+                <div>
+                    <br>
+                    Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta
+                    aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus
+                    repellat modi impedit sequi.
+                </div>
+                <div>
+                    <button type="button">Read More</button>
+                </div>
+
+            </span>
+            <span class="first-section-content-right">
+                <img src="images/slider-img.png" alt="" width="80%">
+            </span>
+        </div>
+    </div>
+    <div class="second-section">
+        <div class="second-section-header">
+            <div> Our <span style="  color: rgb(146, 240, 252);">Sevices</span></div>
+            <div class="second-section-header-text">There are many variations of passages of Lorem Ipsum available, but
+                the majority have suffered alteration</div>
+        </div>
+
+        <div class="second-section-content">
+            <div class="second-section-content-left">
+                <div class="second-section-content-left1">
+                    <img src="images/s1.png" alt="" width="120px" />
+                </div>
+
+
+                <div class="second-section-content-left2">
+                    <div>CURRENCY WALLET</div>
+                </div>
+                <div class="second-section-content-left3">
+                    <p>fact that a reader will be distracted by the readable content of a page when looking at its
+                        layout. The point of using</p>
+                    <button class="buttom-read-more" type="button">Read More</button>
+                </div>
+            </div>
+
+            <div class="second-section-content-middle">
+                <div class="second-section-content-middle1">
+                    <img src="images/s2.png" alt="" width="120px" />
+                </div>
+                <div class="second-section-content-middle2">
+                    <div>SECURITY STORAGE</div>
+                </div>
+                <div class="second-section-content-middle3">
+                    <p>fact that a reader will be distracted by the readable content of a page when looking at its
+                        layout. The point of using</p>
+                    <button class="buttom-read-more" type="button">Read More</button>
+                </div>
+            </div>
+            <div class="second-section-content-right">
+                <div class="second-section-content-right1">
+                    <img src="images/s3.png" alt="" width="120px" />
+                </div>
+                <div class="second-section-content-right2">
+                    <div>EXPERT SUPPORT</div>
+                </div>
+                <div class="second-section-content-right3">
+                    <P>
+                        fact that a reader will be distracted by the readable content of a page when looking at its
+                        layout. The point of using
+                    </P>
+                    <button class="buttom-read-more" type="button">Read More</button>
+                </div>
+            </div>
+            <div>
+                <button class="buttom-veiw-all" type="button">View All</button>
+            </div>
+        </div>
+    </div>
+    <div class="third-section">
+        <div class="third-section-header">
+            <h1>About <span>Us</span></h1>
+            <p>Magni quod blanditiis non minus sed aut voluptatum illum quisquam aspernatur ullam vel beatae rerum ipsum
+                voluptatibus</p>
+        </div>
+        <div class="third-section-content">
+            <div class="third-section-content-left">
+                <img src="images/about-img.png" alt="No Image" width="82%">
+            </div>
+            <div class="third-section-content-right">
+                <h1>We Are Finexo</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                    anything embarrassing hidden in the middle of text. All <br> Molestiae odio earum non qui cumque
+                    provident voluptates, repellendus exercitationem, possimus at iste corrupti officiis unde alias eius
+                    ducimus reiciendis soluta eveniet. Nobis ullam ab omnis quasi expedita.</p>
+                <button type="button">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="fourth-section">
+        <div class="fourth-section-header">
+            <div>
+                <h1>Why Choose <span>Us</span></h1>
+            </div>
+        </div>
+
+        <div class="fourth-section-content1">
+            <div class="fourth-section-content1-div1">
+                <img src="images/w1.png" alt="" width="99px">
+            </div>
+            <div class="fourth-section-content1-div2">
+                <h2>Expert Management</h2>
+            </div>
+            <div class="fourth-section-content1-div3">
+                Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi
+                corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia
+                id, aspernatur nihil. Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat
+                veritatis unde reiciendis possimus animi autem natus.
+            </div>
+        </div>
+
+        <div class="fourth-section-content2">
+            <div class="fourth-section-content2-div1">
+                <img src="images/w2.png" alt="" width="99px">
+            </div>
+            <div class="fourth-section-content2-div2">
+                <h2>Secure Investment</h2>
+            </div>
+            <div class="fourth-section-content2-div3">
+                Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi
+                corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia
+                id, aspernatur nihil. Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat
+                veritatis unde reiciendis possimus animi autem natus.
+            </div>
+        </div>
+
+        <div class="fourth-section-content3">
+            <div class="fourth-section-content3-div1">
+                <img src="images/w3.png" alt="" width="99px">
+            </div>
+            <div class="fourth-section-content3-div2">
+                <h2>Instant Trading</h2>
+            </div>
+            <div class="fourth-section-content3-div3">
+                Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi
+                corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia
+                id, aspernatur nihil. Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat
+                veritatis unde reiciendis possimus animi autem natus.
+            </div>
+        </div>
+
+        <div class="fourth-section-content4">
+            <div class="fourth-section-content4-div1">
+                <img src="images/w4.png" alt="" width="99px">
+            </div>
+            <div class="fourth-section-content4-div2">
+                <h2>Happy Customers</h2>
+            </div>
+            <div class="fourth-section-content4-div3">
+                Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi
+                corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia
+                id, aspernatur nihil. Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat
+                veritatis unde reiciendis possimus animi autem natus.
+            </div>
+        </div>
+        <div class="fourth-section-buttom">
+            <div><button class="" type="button">Read More</button></div>
+        </div>
+    </div>
+
+    <div class="fifth-section">
+        <div class="fifth-section-header">
+            <h1>Our <span>Team</span></h1>
+        </div>
+        <div class="fifth-section-content">
+
+            <div class="fifth-section-content1">
+                <div class="fifth-section-img"><img src="images/team-1.jpg" alt="" width="50%"></div>
+                <div>
+                    <h2>Joseph Brown</h2>
+                    <h3>Marketing Head</h3>
+                </div>
+                <div>
+                    <div class="social_box">
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/facebook.png"
+                                alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/twitter.png" alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/linkedin.png"
+                                alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/instagram.png"
+                                alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/youtube.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fifth-section-content2">
+                <div class="fifth-section-img"><img src="images/team-2.jpg" alt="" width="50%"></div>
+                <div>
+                    <h2>Nancy White</h2>
+                    <h3>Marketing Head</h3>
+                </div>
+                <div>
+                    <div class="social_box">
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/facebook.png"
+                                alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/twitter.png" alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/linkedin.png"
+                                alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/instagram.png"
+                                alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/youtube.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fifth-section-content3">
+                <div class="fifth-section-img"><img src="images/team-3.jpg" alt="" width="50%"></div>
+                <div>
+                    <h2>Earl Martinez</h2>
+                    <h3>Marketing Head</h3>
+                </div>
+                <div>
+                    <div class="social_box">
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/facebook.png"
+                                alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/twitter.png" alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/linkedin.png"
+                                alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/instagram.png"
+                                alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/youtube.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fifth-section-content4">
+                <div class="fifth-section-img"><img src="images/team-4.jpg" alt="" width="50%"></div>
+                <div>
+                    <h2>Josephine Allard</h2>
+                    <h3>Marketing Head</h3>
+                </div>
+                <div>
+                    <div class="social_box">
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/facebook.png"
+                                alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/twitter.png" alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/linkedin.png"
+                                alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/instagram.png"
+                                alt=""></a>
+                        <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/youtube.png" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="sixth-section">
+        <div class="sixth-section-header">
+            <h1>What says our <span>Customers</span></h1>
+        </div>
+        <div class="sixth-section-content">
+            <div class="comment-section">
+                <div>
+                    <img src="images/client1.jpg" alt="" srcset="" width="20%">
+                    <h2>LusDen</h2>
+                    <h3>margna aliqua. Ut</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptas sint libero aperiam fuga
+                        sequi velit in quaerat ullam, tempore repellat, quidem architecto quod? Ipsa rem consequatur
+                        quos, deserunt totam officia. Nesciunt rerum dolor adipisci consectetur nihil animi eaque
+                        soluta.</p>
+                </div>
+                <div>
+                    <img src="images/client2.jpg" alt="" srcset="" width="20%">
+                    <h2>Zen Cuort</h2>
+                    <h3>margna aliqua. Ut</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptas sint libero aperiam fuga
+                        sequi velit in quaerat ullam, tempore repellat, quidem architecto quod? Ipsa rem consequatur
+                        quos, deserunt totam officia. Nesciunt rerum dolor adipisci consectetur nihil animi eaque
+                        soluta.</p>
+                </div>
+            </div>
+            <div class="prev-next-button">
+                <div>
+                    <button>
+                        < </button>
+                            <button>></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-section">
+        <div class="footer-address">
+            <div>
+                <h1>Address</h1>
+                <h3>Location
+                    <br>
+                    Call +91 8883944
+                    <br>
+                    demo@gmail.com
+                </h3>
+                <div class="social_box-footer">
+                    <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/facebook.png" alt=""></a>
+                    <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/twitter.png" alt=""></a>
+                    <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/linkedin.png" alt=""></a>
+                    <a href="https://www.facebook.com/>"><img src="images/Social-media-logo/instagram.png" alt=""></a>
+                </div>
+            </div>
+            <div>
+                <h1>Info</h1>
+                <h3>necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+                </h3>
+            </div>
+            <div>
+                <h1>Links</h1>
+                <h3>Home <br>About <br>Services <br>Why Us <br> Team</h3>
+            </div>
+            <div>
+                <h1>Subscribe</h1>
+                <input type="text" placeholder="Enter Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="copy-right">
+            <div>@ 2023 All Rights Reserved By Free Html Templates</div>
+        </div>
+    </div>
+</body>
+
+</html>

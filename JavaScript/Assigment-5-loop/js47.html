@@ -1,0 +1,21 @@
+<body>
+    <script>
+        function tableBwTwoNum() {
+            var n1 = prompt("Enter a  1st Number : ") * 1;
+            var n2 = prompt("Enter a  2nd Number : ") * 1;
+
+            for (var i = n1; i <= n2; i++) {
+                var tempNum = i;
+                count = 1;
+                while (count <= 10) {
+                    document.write("<br> " + (tempNum * count));
+                    count++;
+                }
+                document.write("<hr>");
+            }
+            document.write("Sum of 1st & 2nd Digit of " + orignalNum + " -----> " + sum);
+        }
+    </script>
+    <form><input type="button" value="Table of Numbers" onclick="tableBwTwoNum()">
+    </form>
+</body>

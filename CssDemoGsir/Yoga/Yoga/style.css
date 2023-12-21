@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.main-container {
+    height: auto;
+    width: 98.7vw;
+    position: relative;
+}
+
+.banner-image {
+    width: 98.7vw;
+    height: 110vh;
+    margin-top: -60px;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(50%)
+}
+
+.first-section {
+    height: 90vh;
+    width: 98.7vw;
+    border: 1px solid white;
+}
+
+#heading {
+    width: 70%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#heading div {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading div svg {
+    background-color: white;
+    border: 5px solid white;
+    height: 18px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+#heading div a {
+    margin-left: 5px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+#heading div img {
+    height: 90%;
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+}
+
+#content {
+    width: 70%;
+    height: 30vh;
+    margin-top: 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.join-button {
+    width: 200px;
+    height: 60px;
+    background-color: #FE86D4;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.join-button:hover {
+    color: #7B6CD5;
+}
+
+.second-page {
+    width: 98.7vw;
+    height: 65vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#second-page-heading {
+    width: 98.7vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.heading-name {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: #7B6CD5;
+}
+
+#para {
+    color: #88667A;
+}
+
+#second-page-content {
+    width: 70%;
+    height: 27vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#second-page-content-area svg {
+    height: 65px;
+}
+
+#second-page-content-area {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    letter-spacing: 0.55px;
+    position: relative;
+}
+
+#second-page-content-area p {
+    bottom: 0px;
+    position: absolute;
+    color: #555555;
+    font-size: 18px;
+}
+
+#content h1 {
+    font-size: 40px;
+}
+
+#second-page-content-area h1:hover {
+    color: #FE86D4;
+}
+
+.third-page {
+    width: 98.7vw;
+    height: 85vh;
+    background-color: #F5F5F5;
+    position: relative;
+    display: flex;
+    line-height: 30px;
+}
+
+.third-page img {
+    position: absolute;
+    height: 100%;
+    width: 67%;
+    right: 0;
+}
+
+.third-page div:nth-child(1) {
+    height: 100%;
+    width: 30%;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    background-color: white;
+    row-gap: 15px;
+}
+
+.third-page ul {
+    width: 350px;
+    height: 160px;
+}
+
+.third-page ul li {
+    list-style: circle;
+    line-height: 50px;
+}
+
+.fourth-page {
+    height: 145.5vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.fourth-page img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.fourth-page #second-page-heading {
+    /* border: 1px solid black; */
+    height: 10%;
+    width: 100%;
+}
+
+.fourth-page-image-content {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 100px;
+    width: 100%;
+    height: 85%;
+    /* border: 1px solid black; */
+}
+
+#content-row {
+    /* border: 1px solid green; */
+    height: 80%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#content-row #second-page-content-area {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 25%;
+    transform: rotate(-25deg);
+    text-align: end;
+}
+
+#content-row #second-page-content-area h1 {
+    font-size: 20px;
+    color: #444444;
+}
+
+#content-row #second-page-content-area p {
+    font-size: 17px;
+    color: #666883;
+}
+
+.fourth-page-image-content div:nth-child(1) {
+    transform: rotate(25deg);
+}
+
+.fourth-page-image-content div:nth-child(2) {
+    transform: rotate(-25deg);
+}
+
+.fourth-page-image-content div:nth-child(2) #second-page-content-area {
+    transform: rotate(25deg) !important;
+}
+
+.fourth-page #second-page-content-area h1:hover {
+    color: #FE86D4;
+}
+
+@media screen and ((min-width: 360px) and (max-width: 520px)) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    .main-container {
+        height: auto;
+        width: 99vw;
+        position: relative;
+    }
+
+    .banner-image {
+        width: 99vw;
+        height: 100vh;
+        margin-top: -60px;
+        position: absolute;
+        z-index: -1;
+        filter: brightness(50%)
+    }
+
+    .first-section {
+        height: 90vh;
+        width: 99vw;
+        border: 1px solid white;
+    }
+
+    #heading {
+        width: 70%;
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #heading div {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #heading div svg {
+        background-color: white;
+        border: 5px solid white;
+        border-radius: 50%;
+        height: 8px;
+        width: 15px;
+    }
+
+    #heading div a {
+        margin-left: 8px;
+        font-size: 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+    #heading div img {
+        height: 90%;
+        width: 60px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #content {
+        width: 70%;
+        height: 40vh;
+        margin-top: 40px;
+        color: white;
+        /* border: 1px solid white; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #content h1 {
+        font-size: 13px;
+    }
+
+    #content p {
+        font-size: 10px;
+    }
+
+    .join-button {
+        width: 120px;
+        height: 20px;
+        background-color: #FE86D4;
+        border: none;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .join-button:hover {
+        color: #7B6CD5;
+    }
+
+    .second-page {
+        width: 98.7vw;
+        height: 75vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #second-page-heading {
+        width: 98.7vw;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .heading-name {
+        font-family: 'Roboto Slab', serif;
+        font-size: 30px;
+        color: #7B6CD5;
+    }
+
+    #para {
+        color: #88667A;
+        font-size: 10px;
+    }
+
+    #second-page-content {
+        width: 70%;
+        height: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #second-page-content-area {
+        width: 30%;
+        height: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    #second-page-content-area svg,
+    img {
+        height: 40px;
+    }
+
+    #second-page-content-area h1 {
+        font-size: 13px;
+    }
+
+    #second-page-content-area p {
+        bottom: 0px;
+        position: absolute;
+        color: #555555;
+        font-size: 10px;
+    }
+
+    #second-page-content-area h1:hover {
+        color: #FE86D4;
+    }
+
+    .third-page {
+        width: 98.7vw;
+        height: 80vh;
+        border: 1px solid black;
+        background-color: #F5F5F5;
+        position: relative;
+    }
+
+    /* .third-page div:nth-child(2) {
+        height: 100%;
+        width: 60%;
+        border: 1px solid black
+    } */
+
+    .third-page img {
+        position: absolute;
+        border: 1px solid black;
+    }
+
+    .third-page div:nth-child(1) {
+        height: 100%;
+        width: 40%;
+        border: 1px solid black;
+        padding-left: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

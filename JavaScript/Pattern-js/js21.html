@@ -1,0 +1,17 @@
+<body>
+    <pre>
+
+<script>
+    var n = prompt("Enter Number: ") * 1;
+    for (var i = 65; i <= 65+n; i++) {
+        for (var j = 65; j <= i; j++) {
+            if (j == 65 || i == 65+n || i == j)
+                document.write(String.fromCharCode(j));
+            else
+                document.write(" ");
+        }
+        document.write("<br>")
+    }
+</script>
+    </pre>
+</body>

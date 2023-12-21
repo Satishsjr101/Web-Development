@@ -1,0 +1,10 @@
+<script>
+    var n = prompt("Enter Number: ") * 1;
+    var ch=97;
+    for (var j = 65; j <= n + 65; j++) {
+        for (var i = 65; i <= j; i++) {
+            document.write(String.fromCharCode(ch++));
+        }
+        document.write("<br>")
+    }
+</script>

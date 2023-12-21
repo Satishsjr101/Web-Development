@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-5</title>
+</head>
+<body>
+    <center>
+    <img id="main" src="images/shoes1.jpeg" width="600" height="600"><br>
+    
+    <img id="first" src="images/shoes2.jpeg" onclick="changeImage(this)" width="100" height="100">
+    <img id="second" src="images/shoes3.jpeg" onclick="changeImage(this)" width="100" height="100">
+    <img id="third" src="images/shoes4.jpeg" onclick="changeImage(this)" width="100" height="100">
+    </center>
+    <script>
+    
+    function changeImage(currentImageObj){
+        var currobj=document.getElementById("main");
+
+        var temp=currobj.src;
+        currobj.src=currentImageObj.src;  
+        currentImageObj.src=temp;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!--13)Find common elements in three sorted arrays.
+Given three arrays sorted in increasing order. Find the elements that are common in all three arrays.
+Note: can you take care of the duplicates without using any additional Data Structure?
+Example 1:
+Input:
+n1 = 6; A = {1, 5, 10, 20, 40, 80}
+n2 = 5; B = {6, 7, 20, 80, 100}
+n3 = 8; C = {3, 4, 15, 20, 30, 70, 80, 120}
+Output: 20 80
+Explanation: 20 and 80 are the only
+common elements in A, B and C. -->
+<script>
+    var n1=(prompt("Enter size of array1: "))*1;
+    var n2=(prompt("Enter size of array2: "))*1;
+    var n3=(prompt("Enter size of array3: "))*1;
+    var arr1=new Array(n1);
+    var arr2=new Array(n2);
+    var arr3=new Array(n3);
+    var i,j=0,flag1=false,flag2=false;
+    for(var i=0;i<n1;i++){
+        arr1[i]=(prompt("Enter "+(i+1)+" element of the array1: "))*1;
+    }
+    for(var i=0;i<n2;i++){
+        arr2[i]=(prompt("Enter "+(i+1)+" element of the array2: "))*1;
+    }
+    for(var i=0;i<n3;i++){
+        arr3[i]=(prompt("Enter "+(i+1)+" element of the array3: "))*1;
+    }
+    document.write("<br><br>***1st ARRAY***<br>")
+    for(i=0;i<n1;i++){
+      document.write(arr1[i]+" ");
+    }
+    document.write("<br><br>***2nd ARRAY***<br>")
+    for(i=0;i<n2;i++){
+      document.write(arr2[i]+" ");
+    }
+    document.write("<br><br>***3rd ARRAY***<br>")
+    for(i=0;i<n3;i++){
+      document.write(arr3[i]+" ");
+    }
+    document.write("<br>***COMMON ELEMENTS***<br> ");
+    for(i=0;i<n1;i++){
+      flag1=flag2=false;
+      for(j=0;j<n2;j++){
+        if(arr1[i]==arr2[j])
+          flag1=true;
+      }
+      for(j=0;j<n3;j++){
+        if(arr1[i]==arr3[j])
+          flag2=true;
+      }
+      if(flag1&&flag2)
+        document.write(arr1[i]+" ");
+    }
+
+</script>

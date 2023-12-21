@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n1 = prompt("Enter a 1st Number: ");
+        var n2 = prompt("Enter a 2nd Number: ");
+
+        for (i = n1; i <= n2; i++) {
+            var tempNum = i;
+
+            document.write("Factors of " + tempNum + " :- ")
+            for (var j = 1; j <= tempNum; j++) {
+                if (tempNum % j == 0) {
+                    document.write(" " + j);
+                }
+            }
+            document.write("<hr>");
+        }
+    </script>
+</body>
+
+</html>

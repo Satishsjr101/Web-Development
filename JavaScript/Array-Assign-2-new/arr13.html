@@ -1,0 +1,18 @@
+<script>
+    function findFirstRepEle(arr) {
+    let set = new Set();
+
+    for (let i = 0; i < arr.length; i++) {
+        if (set.has(arr[i])) {
+            return arr[i];
+        }
+        set.add(arr[i]);
+    }
+    return "No repeating element found";
+}
+
+let array = [3, 2, 1, 2, 2, 3];
+let result = findFirstRepEle(array);
+console.log("First repeating element:", result);
+
+</script>

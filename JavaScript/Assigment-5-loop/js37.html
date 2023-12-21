@@ -1,0 +1,21 @@
+<body>
+    <script>
+        function checkPalindromeNo() {
+            var n = prompt("Enter a Number: ");
+            var m = n;
+            var rem = 0, rev = 0;
+            while (n != 0) {
+                rem = n % 10;
+                rev = rev * 10 + rem;
+                n = parseInt(n / 10);
+            }
+            if (m == rev)
+                alert(m + " Panlindrome Number ");
+            else
+                alert(m + " not a Panlindrome Number ");
+
+        }
+    </script>
+    <form><input type="button" value="checkPalindromeNo" onclick="checkPalindromeNo()">
+    </form>
+</body>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show/Hide Text</title>
+  <style>
+    .hidden{
+        display: none;
+    }
+  </style>
+</head>
+<body>
+    <button  onclick="toggleText()">+</button>
+    <p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, quia dolor quod dolores ratione veniam voluptate expedita vitae porro rerum.</p>
+
+    <script>
+        function toggleText(){
+            var textEle = document.getElementById("para1");
+
+            if(textEle.style.display === 'none' || textEle.classList.contains("hidden")){
+                textEle.style.display='block';
+                textEle.classList.remove('hidden');
+            }
+            else{
+                textEle.style.display='none';
+                textEle.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show/Hide Text</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<p id="myText">This is the text you want to show/hide.</p>
+<button onclick="toggleText()">Toggle Text</button>
+
+<script>
+  function toggleText() {
+    var textElement = document.getElementById("myText");
+    
+    // Toggle the visibility by adding or removing the 'hidden' class
+    if (textElement.style.display === "none" || textElement.classList.contains("hidden")) {
+      textElement.style.display = "block";
+      textElement.classList.remove("hidden");
+    } else {
+      textElement.style.display = "none";
+      textElement.classList.add("hidden");
+    }
+  }
+</script>
+
+</body>
+</html>

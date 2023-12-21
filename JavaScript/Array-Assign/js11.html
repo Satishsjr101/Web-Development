@@ -1,0 +1,22 @@
+<!-- 11)Write a program to cyclically rotate array by one. -->
+<script>
+    var n=(prompt("Enter size of array: "))*1;
+    var arr=new Array(n);
+    var rotated=new Array(n);
+    var k=1,j=0;//rotated 1 time
+    for(var i=0;i<n;i++){
+        arr[i]=(prompt("Enter "+(i+1)+" element of the array: "))*1;
+    }
+    for(var i=0;i<n;i++){
+        document.write(arr[i]+" ");
+    }document.write("<br>rotated array .... <br>");
+    for(var i=n-k;i<n;i++){
+      rotated[j++]=arr[i];
+    }
+    for(var i=0;i<n-k;i++){
+      rotated[j++]=arr[i];
+    }
+    for(var i=0;i<n;i++){
+        document.write(rotated[i]+"  ");
+    }
+</script>

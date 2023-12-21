@@ -1,0 +1,11 @@
+<script>
+    function fibonacci(a,b){
+        for(var i = 1; i <= 10; i++){
+            var t = a + b;
+            document.writeln(t);
+            a = b;
+            b = t;
+        }
+    }
+    fibonacci(-1,1);
+</script>

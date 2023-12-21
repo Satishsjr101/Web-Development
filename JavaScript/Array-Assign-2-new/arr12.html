@@ -1,0 +1,22 @@
+<!-- Find common elements in three sorted arrays. -->
+<script>
+    var a =[1, 5, 10, 20, 40, 80]
+    var b =[6, 7, 20, 80, 100]
+    var c = [3, 4, 15, 20, 30, 70, 80, 120]
+
+    var n1 = a.length;
+    var n2 =b.length;
+    var n3 =c.length; 
+    var tn=(n1>n2 && n1>n3)?n1:(n2>n3&&n2>n1)?n2:n3;
+
+    for(var i=0;i<tn;i++){
+        for(var j=0;j<n2;j++){
+            for(var k=0;k<n3;k++){
+
+            if(a[i]==b[j] && a[i]==c[k]){
+                   document.writeln(a[i]+" "); 
+            }
+        }
+        }
+    }
+</script>

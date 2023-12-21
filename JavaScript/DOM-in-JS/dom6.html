@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-5</title>
+    <style>
+        #maindiv{
+            position: absolute;
+            left: 25%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width:  300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        .rotateDiv{
+            rotate: 10deg;
+        }
+        .rotateDivReverse{
+            rotate: 0deg;
+        }
+    </style>
+</head>
+<body>
+        <div id="maindiv" onmouseover="fillBgColor()" ondblclick="reverseDiv()"></div>
+        <script>
+            function fillBgColor(){
+                var obj=document.getElementById("maindiv");
+                obj.style.backgroundColor="blue";
+                obj.classList.add("rotateDiv");
+            }
+            function reverseDiv(){
+                var obj=document.getElementById("maindiv");
+                obj.style.backgroundColor="white";
+                obj.classList.add("rotateDivReverse");
+            }
+        </script>
+</body>
+</html>

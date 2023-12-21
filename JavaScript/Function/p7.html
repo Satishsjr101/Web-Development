@@ -1,0 +1,19 @@
+<script>
+    var a = function (a, b) {
+        document.write("hello<br>");
+        document.writeln("a :" + a + " b : " + b);
+    };
+
+    a(10, 20);
+    function f1(a, b, c) {
+        document.write("<br> a : " + a);
+        document.write("<br> b : " + b);
+        c();
+    }
+    var x = 10;
+    var y = 20;
+    var c = function () {
+        document.write("<br>c..executed");
+    };
+    f1(x, y, c)
+</script>

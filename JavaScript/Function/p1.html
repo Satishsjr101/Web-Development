@@ -1,0 +1,11 @@
+<script>
+    function f1(a,b,callback){
+        var result = a + b;
+        document.write("result "+result);
+        callback("<br>"+result);
+       
+    }
+    f1(10,20,function(result){
+        result % 2 ?document.write("<br>even"):document.write("<br>odd");
+    })
+</script>

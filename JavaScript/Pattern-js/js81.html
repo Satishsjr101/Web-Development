@@ -1,0 +1,26 @@
+<body>
+    <pre>
+
+<script>
+    var n = prompt("Enter Number: ") * 1;
+    for (var i = 1; i <= n; i++) {
+
+        for (var j = 1; j <= n; j++) {
+            if (i == 1 || i == n)
+                document.write("-");
+            else if (j == 1 || j == n)
+                document.write("|");
+            else if (i == j)
+                document.write("\\");
+
+            else if (j == n + 1 - i)
+                document.write("/");
+            else
+                document.write(" ");
+
+        }
+        document.write("<br>")
+    }
+</script>
+    </pre>
+</body>

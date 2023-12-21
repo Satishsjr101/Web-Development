@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            border: solid 2px red;
+            background-color: #3297cb;
+            height: 150px;
+            width: 100%;
+            border-bottom-color: rgb(250, 229, 229);
+            border-bottom-width: 10px;
+        }
+
+        .header div :nth-child(1) {
+            border: 1px red solid;
+            margin-top: 40px;
+            font-size: 50px;
+            padding-left: 20px;
+
+        }
+
+        .header div :nth-child(1)::after {
+            content: "mo";
+            color: rgb(253, 253, 63);
+        }
+
+        .header div :nth-child(2) {
+            border: 1px red solid;
+            margin-top: 10px;
+            font-size: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div>
+                <h1>template</h1>
+            </div>
+            <div>Free HTML CSS Website Templates </div>
+        </div>
+    </div>
+</body>
+
+</html>

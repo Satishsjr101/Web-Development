@@ -1,0 +1,21 @@
+<body>
+    <pre>
+
+<script>
+    var n = prompt("Enter Number: ") * 1;
+    var k = n;
+    for (var i = n; i >= 1; i--) {
+        for (var j = 1; j <= i; j++) {
+            document.write("*");
+        }
+        for (var sp = 1; sp <= 2 * (n - i); sp++) {
+            document.write(" ");
+        }
+        for (var j = 1; j <= i; j++) {
+            document.write("*");
+        }
+        document.write("<br>")
+    }
+</script>
+    </pre>
+</body>

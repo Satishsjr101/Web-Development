@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>
+        Reverse a number
+    </title>
+</head>
+
+<body>
+    <script>
+        var n1 = prompt("Enter a 1st Num : ") * 1;
+        var n2 = prompt("Enter a 2nd Num : ") * 1;
+
+        for (var i = n1; i <= n2; i++) {
+
+            var tempNum = i;
+
+            var rem = 0, rev = 0;
+            while (tempNum != 0) {
+                rem = tempNum % 10;
+                rev = rev * 10 + rem;
+                tempNum = parseInt(tempNum / 10);
+            } document.write(i + " reverse is " + rev + "<br>");
+        }
+    </script>
+</body>
+
+</html>

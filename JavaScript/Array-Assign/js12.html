@@ -1,0 +1,46 @@
+<!-- Q.12 Count pair with given sum.
+Given an array of N integers, and an integer K, find the number of pairs of elements in the array whose sum is equal to K.
+
+Example 1:
+Input:
+N = 4, K = 6
+arr[] = {1,5,7,1}
+Output: 2
+Explanation: 
+arr[0] + arr[1] = 1 + 5 = 6 
+and arr[1] + arr[3] = 5 + 1 = 6.
+
+Example 2:
+Input:
+N = 4, X = 2
+arr[] = {1, 1, 1, 1}
+Output: 6
+Explanation:
+Each 1 will produce sum 2 with any 1. -->
+<script>
+    var n=(prompt("Enter size of array: "))*1;
+    var arr=new Array(n);
+    var i,j=0,num,currentSum,count=0,flag=true;
+    for(var i=0;i<n;i++){
+        arr[i]=(prompt("Enter "+(i+1)+" element of the array: "))*1;
+    }
+    for(i=0;i<n;i++){
+      document.write(arr[i]+" ");
+    }
+    document.write("<br><br>enter the elements of sum which is present in array or not <br>");
+    var num=(prompt("Enter num: "))*1;
+    for(i=0;i<n;i++){
+      for(j=(i+1),currentSum=arr[i];j<n;j++){
+        currentSum=arr[i];
+        currentSum=currentSum+arr[j];
+        if(currentSum==num){
+          flag=false;
+          count++;
+        }
+      }
+    }
+    if(flag)
+    document.write("<br>No subarray found ");
+    else
+      document.write("<br>Output: present "+count);
+</script>

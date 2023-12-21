@@ -1,0 +1,10 @@
+<script>
+    var arr=[9,8,7,6,5,4,3,2,1];
+    var n=arr.length-1;
+    var temp=arr[n];
+    for(var i=0;i<arr.length-1;i++){
+        arr[n-i]=arr[n-1-i];
+    }
+    arr[0]=temp;
+    document.writeln(arr+":<br>");
+</script>

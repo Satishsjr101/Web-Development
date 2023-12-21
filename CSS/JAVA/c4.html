@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons & Positions</title>
+    <style>
+        .container {
+            border: solid 2px rgb(0, 255, 38);
+            height: 70%;
+            width: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: bisque;
+        }
+
+        button {
+            border: solid 1px red;
+            position: relative;
+            width: 100px;
+            height: 50px;
+            z-index: 1;
+            /* border-radius: 45%; */
+        }
+
+        .container button:nth-child(1)::after {
+            position: absolute;
+            content: "";
+            width: 0px;
+            height: 100%;
+            display: flex;
+            top: 0;
+            left: 0;
+            background-color: blueviolet;
+            z-index: -1;
+        }
+
+        .container button:nth-child(1):hover::after {
+            width: 100%;
+            transition: all 1s ease-in-out;
+            /* z-index: 
+            ; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Button Page</h1>
+        <button>First</button>
+        <button>Second</button>
+        <button>Third</button>
+        <button>Fourth</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<script>
+    function natural(n,callback){
+        if (n < 0) {
+            callback();
+        } else {
+          for(var i  = n ; i >= 1; i--){
+            document.write(i+"<br>");
+          }
+        }
+    }
+    natural(1,function(){
+        document.write(new Error("Invailid"))
+    });
+
+</script>

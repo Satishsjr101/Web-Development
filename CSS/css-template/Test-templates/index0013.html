@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiya-Golf</title>
+    <style>
+        .first-section {
+            width: 100%;
+            height: 600px;
+            background-image: url(images/homepage.jpg);
+            background-size: 1400px;
+        }
+
+        .first-section div {
+            margin: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            background-color: #3D405B;
+
+        }
+
+        .navbar div img {
+            width: 50px;
+            height: 50px;
+            margin-left: 80px;
+            margin-top: 20px;
+            filter: invert(10%) sepia(1%) saturate(100%) hue-rotate(1deg) brightness(1000%) contrast(800%);
+        }
+
+        .header-button {
+            display: flex;
+            margin-left: 200px !important;
+            margin-top: 20px !important;
+        }
+
+        .navbar button {
+            margin: 10px;
+            width: 100px;
+            height: 40px;
+            background-color: #3D405B;
+            border: none;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .navbar button:nth-child(7) {
+            border: 2px solid #F2CC8F;
+            color: #F2CC8F;
+            border-radius: 40%;
+            width: 130px;
+        }
+
+        .navbar button:nth-child(1) {
+            color: #F2CC8F;
+            border: none;
+        }
+
+        .navbar button:nth-child(1):hover {
+            color: white;
+        }
+
+        .navbar button:nth-child(7):hover {
+            background-color: #F2CC8F;
+            color: white;
+        }
+
+        .navbar button:hover {
+            border: none;
+            color: #F2CC8F;
+        }
+
+        .content {
+            margin-top: 20px !important;
+            margin-left: 2px;
+        }
+
+        .content span {
+            display: flex;
+            color: white;
+        }
+
+        .content span:nth-child(1) {
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        .content span:nth-child(2) {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .first-section p {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            margin-top: 130px;
+            margin-left: 100px;
+        }
+
+        .left-div div {
+            margin-left: 100px;
+        }
+
+        .left-div button {
+            border: none;
+            background-color: transparent;
+            color: white;
+            height: 40px;
+            width: 150px;
+        }
+
+        .left-div button:nth-child(1) {
+            background-color: #F2CC8F;
+            width: 100px;
+            border-radius: 40%;
+        }
+
+        .left-div button:nth-child(1):hover {
+            background-color: #E07A5F;
+        }
+
+        .left-div button:nth-child(2):hover {
+            color: #F2CC8F;
+        }
+
+        .second-section {
+            border: solid red;
+            width: 100%;
+            height: 550px;
+
+        }
+
+        .second-left-div {
+            border: solid black;
+            width: 40%;
+            height: 400px;
+        }
+
+        .inner-div {
+            display: flex;
+        }
+
+        .second-right-div {
+            border: solid blue;
+            width: 60%;
+            height: 400px;
+        }
+
+        .second-left-div div {
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+        .second-left-div div p {
+            font-size: 21px;
+            color: #797A7D;
+        }
+
+        .svg-bottom {
+            width: 1380px;
+            position: relative;
+            bottom: 200px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="first-section">
+        <div>
+            <div class="navbar">
+                <div>
+                    <img src="images/logo.png" alt="no image found">
+                </div>
+                <div class="content">
+                    <span>Tiya</span>
+                    <span>Golf Club</span>
+                </div>
+                <div class="header-button">
+                    <button>Home</button>
+                    <button>About</button>
+                    <button>Membership</button>
+                    <button>Events</button>
+                    <button>Contact Us</button>
+                    <button>Pages</button>
+                    <button>Member login</button>
+                </div>
+            </div>
+    </section>
+
+    <section class="second">
+        <div class="upper-wave">
+            <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg"
+                class="transition duration-300 ease-in-out delay-150">
+                <path
+                    d="M 0,500 C 0,500 0,250 0,250 C 75.32307692307691,198.2153846153846 150.64615384615382,146.4307692307692 227,172 C 303.3538461538462,197.5692307692308 380.7384615384616,300.49230769230775 453,343 C 525.2615384615384,385.50769230769225 592.4000000000001,367.59999999999997 686,321 C 779.5999999999999,274.40000000000003 899.6615384615386,199.1076923076923 985,177 C 1070.3384615384614,154.8923076923077 1120.9538461538461,185.96923076923076 1191,207 C 1261.0461538461539,228.03076923076924 1350.523076923077,239.01538461538462 1440,250 C 1440,250 1440,500 1440,500 Z"
+                    stroke="none" stroke-width="0" fill="#3d405b" fill-opacity="1"
+                    class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 250)">
+                </path>
+            </svg>
+        </div>
+        <div class="bc-img">
+        </div>
+        <div class="lower-wave"></div>
+    </section>
+    <!-- <section class="svg-top">
+                <div>
+                    
+                </div>
+            </section>
+            <section class="svg-bottom">
+                <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg"
+                    class="transition duration-300 ease-in-out delay-150">
+                    <path
+                        d="M 0,500 C 0,500 0,250 0,250 C 92.69999999999999,269.8076923076923 185.39999999999998,289.61538461538464 253,310 C 320.6,330.38461538461536 363.10000000000014,351.34615384615387 449,320 C 534.8999999999999,288.65384615384613 664.1999999999999,205 760,207 C 855.8000000000001,209 918.1000000000001,296.65384615384613 984,298 C 1049.8999999999999,299.34615384615387 1119.4,214.3846153846154 1196,192 C 1272.6,169.6153846153846 1356.3,209.80769230769232 1440,250 C 1440,250 1440,500 1440,500 Z"
+                        stroke="none" stroke-width="0" fill="#ffffff" fill-opacity="1"
+                        class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+                </svg>
+            </section>
+
+            <div class="left-div">
+                <p>Welcome to the club<br>
+                    Tiya is Lifestyle</p>
+                <div>
+                    <button>Our Story</button>
+                    <button>Become a member</button>
+                </div>
+            </div>
+            <div class="right-div">
+                <video src=""></video>
+            </div>
+        </div>
+
+     -->
+
+    <!-- <section class="second-section">
+        <div>
+            <h1 style="text-align: center;">About Tiya</h1>
+            <div class="inner-div">
+                <div class="second-left-div">
+                    <div>
+                        <h1>Tiya Club History</h1>
+                        <p><b>Since 1984</b>, Tiya is ranked #8 in the top 10 golf courses in the world. Tiya is
+                            Bootstrap 5 HTML CSS template for golf
+                            clubs. Anyone can modify and use this layout for commercial purposes.</p>
+                        <p>Tiya Golf Club is 100% free CSS template provided by TemplateMo website. Please tell your
+                            friends about our website.
+                            Thank you for visiting.</p>
+                    </div>
+                </div>
+                <div class="second-right-div">
+                    <div>
+                        <img src="images/f7.jpg" alt="no image found">
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+</body>
+
+</html>
