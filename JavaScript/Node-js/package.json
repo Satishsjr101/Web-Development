@@ -1,0 +1,24 @@
+{
+  "name": "exit",
+  "version": "1.0.0",
+  "description": "exit",
+  "main": "p1.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hariom",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "exit"
+  },
+  "keywords": [
+    "exit"
+  ]
+}
